@@ -33,6 +33,12 @@ const Management: React.FC = () => {
       imgSrc: "/portrait/Louis.webp",
       linkedIn: "https://www.linkedin.com/in/louis-etienne-messier-2361311ba/",
     },
+    {
+      name: "Alaa Eddine",
+      role: t("management.roles.logisticsManager"),
+      imgSrc: "/portrait/AlaaEddine.webp",
+      linkedIn: "https://www.linkedin.com/in/alaa-eddine-ayadi-7bb416227/",
+    },
   ];
 
   // Responsables Talents
@@ -47,13 +53,7 @@ const Management: React.FC = () => {
       name: "Hiba Arfaoui",
       role: t("management.roles.recruitmentManager"),
       imgSrc: "/portrait/HibaArfoui.webp",
-      linkedIn: "https://www.linkedin.com/in/hiba-arfaoui-3228b01aa/",
-    },
-    {
-      name: "Sylvain Dessureault",
-      role: t("management.roles.recruitmentManager"),
-      imgSrc: "/portrait/SylvainDessureault.webp",
-      linkedIn: "https://www.linkedin.com/in/sylvaindess/",
+      linkedIn: "http://linkedin.com/in/hiba-mameri-8a566a261/",
     },
     {
       name: "Rana Azemdroub",
@@ -78,12 +78,6 @@ const Management: React.FC = () => {
       linkedIn: "https://www.linkedin.com/in/anthony-lavertu-2a29a7179/",
     },
     {
-      name: "Kaoutar Mimouni",
-      role: t("management.roles.partnershipsManager"),
-      imgSrc: "/portrait/KaoutarMimouni.webp",
-      linkedIn: "https://www.linkedin.com/in/kaoutar-mimouni/",
-    },
-    {
       name: "Cyrille Bernier",
       role: t("management.roles.partnershipsManager"),
       imgSrc: "/portrait/CyrilleBernier.webp",
@@ -94,6 +88,12 @@ const Management: React.FC = () => {
       role: t("management.roles.treasuryManager"),
       imgSrc: "/portrait/AdrianaMaria.webp",
       linkedIn: "https://www.linkedin.com/in/adriana-paternina/",
+    },
+    {
+      name: "Hiba Mameri",
+      role: t("management.roles.externalRelationsManager"),
+      imgSrc: "/portrait/HibaMameri.webp",
+      linkedIn: "https://www.linkedin.com/in/hiba-mameri-8a566a261/",
     },
   ];
 
@@ -159,10 +159,10 @@ const Management: React.FC = () => {
       linkedIn: "https://www.linkedin.com/in/melek-sebri/",
     },
     {
-      name: "",
+      name: "Nora Belattar",
       role: t("management.roles.recognitionManager"),
-      imgSrc: "",
-      isVacant: true,
+      imgSrc: "/portrait/NoraBelattar.webp",
+      linkedIn: "https://www.linkedin.com/in/nora-belattar-77243b302/",
     },
   ];
 
@@ -176,22 +176,62 @@ const Management: React.FC = () => {
     },
     {
       name: "Amen Ouannes",
-      role: t("management.roles.projectsManager"),
+      role: "ASL-Decoder Team Lead",
       imgSrc: "/portrait/AmenOuannes.webp",
       linkedIn: "https://www.linkedin.com/in/amenallah-massarra-ouannes/",
     },
     {
-      name: "",
-      role: t("management.roles.teamLead1"),
+      name: "Loïc Baret",
+      role: "CANlock Team Lead",
       imgSrc: "",
       linkedIn: "",
       isVacant: true,
     },
     {
-      name: "",
-      role: t("management.roles.teamLead2"),
+      name: "Anthony Lavertu",
+      role: "Drone Team Lead",
+      imgSrc: "/portrait/Anthony.webp",
+      linkedIn: "https://www.linkedin.com/in/anthony-lavertu-2a29a7179/",
+    },
+    {
+      name: "Benjamin Leblanc",
+      role: "SGD-Beyond Team Lead",
       imgSrc: "",
       linkedIn: "",
+      isVacant: true,
+    },
+    {
+      name: "Eloïse Prevot",
+      role: "NutriNov Team Lead",
+      imgSrc: "",
+      linkedIn: "",
+      isVacant: true,
+    },
+    {
+      name: "Cyrille Bernier",
+      role: "Poppy Humanoid (Conception) Team Lead",
+      imgSrc: "/portrait/CyrilleBernier.webp",
+      linkedIn: "https://www.linkedin.com/in/cyrille-bernier-31208a252/",
+    },
+    {
+      name: "Baptiste Gabriel Bonin",
+      role: "Poppy Humanoid (Simulation) Team Lead",
+      imgSrc: "",
+      linkedIn: "",
+      isVacant: true,
+    },
+    {
+      name: "Deoth Guei",
+      role: "F1 Jedi Team Lead",
+      imgSrc: "",
+      linkedIn: "",
+      isVacant: true,
+    },
+    {
+      name: "Akram Omari",
+      role: "FlapEEG Team Lead",
+      linkedIn: "",
+      imgSrc: "",
       isVacant: true,
     },
   ];
@@ -532,11 +572,6 @@ const Management: React.FC = () => {
           "medium"
         )}
         {renderCards(
-          projectsResponsables,
-          t("management.sections.projectsTeam"),
-          "medium"
-        )}
-        {renderCards(
           marketingResponsables,
           t("management.sections.marketingTeam"),
           "medium"
@@ -549,6 +584,11 @@ const Management: React.FC = () => {
         {renderCards(
           activitiesResponsables,
           t("management.sections.activitiesTeam"),
+          "medium"
+        )}
+        {renderCards(
+          projectsResponsables,
+          t("management.sections.projectsTeam"),
           "medium"
         )}
       </motion.div>
