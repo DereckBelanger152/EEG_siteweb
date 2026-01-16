@@ -13,24 +13,49 @@
       "subtitle": "Découvrez nos projets innovants !",
       "flapeeg": {
         "title": "FlapEEG",
-        "description": "Jeu vidéo contrôlé par le cerveau"
+          "description": "Un jeu vidéo innovant contrôlé par les ondes cérébrales (EEG). Découvrez comment l'IA et la neurotechnologie permettent de piloter un oiseau virtuel par la pensée. Projet pionnier en interface cerveau-machine, ouvert à tous les profils (neuro, IA, dev, design)."
       },
       "f1tenth": {
         "title": "F1Tenth",
-        "description": "Course EMG avec des voitures F1 à l'échelle 1:10"
+          "description": "Course autonome avec des voitures F1 à l'échelle 1/10e, pilotées par signaux EMG (musculaires) et IA embarquée. Rejoignez l'équipe pour concevoir des algorithmes de pilotage, travailler sur la robotique embarquée et participer à des compétitions techniques. Ouvert aux passionnés de robotique, IA, hardware et software."
       },
       "decisiontree": {
         "title": "TreeCore",
-        "description": "Recherche et développement sur les arbres de décision"
+          "description": "Projet de recherche et développement sur les arbres de décision : explorez les algorithmes classiques et avancés, optimisez la prise de décision automatique et participez à la création d'outils open-source pour l'IA. Idéal pour les étudiants en data science, mathématiques et informatique."
       },
       "lenia": {
         "title": "Lenia",
-        "description": "Automates cellulaires autonomes"
+          "description": "Automate cellulaire autonome inspiré de la vie artificielle : simulez des créatures virtuelles capables d'émergence, d'évolution et d'interaction. Ce projet allie mathématiques, simulation, IA et visualisation scientifique. Rejoignez-nous pour explorer la vie numérique et l'algorithmique créative."
       },
       "mangaai": {
         "title": "MangaAI",
-        "description": "Traduction et analyse automatique de mangas"
+          "description": "Traduction et analyse automatique de mangas grâce à l'IA : OCR, NLP, génération de dialogues et analyse de style. Participez à la création d'outils pour la culture japonaise, la linguistique computationnelle et la vision par ordinateur. Idéal pour les passionnés d'IA, de manga et de traitement du langage."
       },
+      "drone": {
+        "title": "Drone - Laser Tag",
+        "description": "Développez un système laser clé en main pour une compétition FPV autonome : capteur 180°, émission, PCB custom et logiciel de gestion centralisé. Partenaire académique : Philippe Giguère. Team Lead : Anthony Lavertu."
+      },
+      "poppy-conception": {
+        "title": "Poppy Humanoid (Conception)",
+        "description": "Impression 3D, assemblage des articulations et intégration électronique d'un humanoïde open-source. Rejoignez le projet pour participer à la conception technique."
+      },
+      "poppy-simulation": {
+        "title": "Poppy Humanoid (Simulation)",
+        "description": "Apprenez à un robot à marcher en développant des algorithmes RL en simulation, puis transférez-les sur le robot réel. Rejoignez le projet pour explorer l'IA robotique."
+      },
+      "sgd-beyond": {
+        "title": "SGD - Beyond",
+        "description": "Analyse et amélioration d'un algorithme fondamental d'IA (SGD) en y intégrant une méthode d'optimisation par bruit. Plus d'infos et code sur GitHub."
+      },
+      "nutrinov": {
+        "title": "NutriNov",
+        "description": "Identifiez un problème alimentaire et développez un prototype tech viable — en partenariat avec Open Food Facts. Type : Projet Entrepreneurial. Team Lead : Éloïse Prevot."
+      },
+      "canlock": {
+        "title": "CANlock",
+        "description": "Projet partenaire avec Thales : Concevez un système intelligent pour détecter les attaques sur le bus CAN des véhicules. Objectif : réduire les faux positifs et livrer un pipeline exploitable. Profils recherchés : IA/Data, Cybersécurité, Embarqué."
+      },
+      "imageComing": "Image du projet à venir",
       "learnMore": "En savoir plus",
       "github": "GitHub"
     },
@@ -136,6 +161,7 @@
       "roleAmen": "Team Lead ASL-Decoder & Responsable de projet",
       "roleVincent": "Reponsable de projet",
       "president": "Président",
+      "vicePresident": "Vice-Président",
       "projectsLeader": "Leader des projets",
       "logisticsLeader": "Leader de la logistique",
       "logisticsManager": "Responsable de la logistique",
@@ -144,6 +170,7 @@
       "talentsLeader": "Leader des talents",
       "activitiesLeader": "Leader des activités",
       "recruitmentManager": "Responsable du recrutement",
+      "recruitmentAssistant": "Assistante du recrutement",
       "engagementManager": "Responsable de l'engagement",
       "externalRelationsManager": "Responsable des relations externes",
       "partnershipsManager": "Responsable des partenariats",
@@ -164,7 +191,40 @@
     "vacantPosition": "Poste Vacant",
     "positionInInterview": "Poste en entrevue",
     "viewLinkedIn": "Voir LinkedIn",
+    "viewProfile": "Voir le profil",
     "linkedIn": "LinkedIn",
+    "modal": {
+      "name": "Nom",
+      "role": "Rôle",
+      "mission": "Mission",
+      "aboutMe": "À propos",
+      "connect": "Me contacter",
+      "noDetails": "Aucune information supplémentaire disponible."
+    },
+    "aboutMe": {
+      "dereck": "Salut, je m'appelle Dereck! Je suis très passionné par l'informatique en général, mais surtout par l'IA, la cybersécurité et le développement web. En dehors du travail/école, je pratique les arts martiaux mixtes et je cours beaucoup. J'adore les neurosciences et les échecs. N'hésitez pas à me contacter si vous avez des questions sur le club, des demandes pour le site web ou si vous voulez discuter!"
+    },
+    "missions": {
+      "nathaniel": "Guider les leaders afin de respecter la mission, la culture et la vision du Club",
+      "louis": "Assurer que tous les Admins du Club ne manquent de rien",
+      "jade": "Guider l'équipe afin de recruter 300 membres par session",
+      "douae": "Recruter des étudiants et suivre leur intégration dans le Club",
+      "rana": "Assurer une présence aux activités de visibilité (portes ouvertes, festivals, etc.)",
+      "alexandrine": "Guider l'équipe afin d'obtenir 50 000 $",
+      "mihal": "Former des partenariats et remplir des demandes de financement",
+      "adriana": "Gérer le budget et les factures",
+      "anthony": "Gérer les relations avec les organismes à l'Université Laval et à l'international",
+      "yves": "Guider l'équipe pour atteindre 900 followers LinkedIn",
+      "hibaComm": "Créer le calendrier des annonces et assurer le retour de celles-ci",
+      "youssouf": "Designer la merch, les visuels, le nouveau logo du Club et le site web",
+      "dereck": "Créer, maintenir et mettre à jour le site web",
+      "eleonore": "Créer des liens entre 500 membres à travers 30 événements",
+      "william": "Organiser des sorties (soirées jeux de société, 5@7, sport, etc.)",
+      "nora": "Organiser des activités pour reconnaître les succès",
+      "jordan": "Encadrer 50 étudiants dans les projets par session",
+      "guilhem": "Former les membres selon les besoins des projets",
+      "amen": "Lancer de nouveaux projets en recrutant des Team Leads et Team Members"
+    },
     "structuredData": {
       "name": "Équipe et Leadership - Club Intelligence Artificielle Université Laval",
       "description": "Équipe dirigeante du Club IA ULaval avec président, leaders et responsables",
@@ -587,6 +647,846 @@
     },
     "team": {
       "title": "Rencontrez l'équipe derrière le projet"
+    }
+  },
+  "nutrinov": {
+    "hero": {
+      "title": "NutriNov",
+      "subtitle": "Innovation Alimentaire & Entrepreneuriat IA",
+      "paragraph1": "NutriNov est un projet entrepreneurial innovant visant à révolutionner le secteur de l'alimentation grâce à l'intelligence artificielle. Notre mission est d'identifier et résoudre des problèmes concrets liés à l'alimentation en développant des solutions technologiques créatives et viables.",
+      "paragraph2": "En partenariat avec Open Food Facts, nous exploitons une base de données ouverte et complète sur les produits alimentaires pour créer des systèmes intelligents répondant aux besoins réels des consommateurs et professionnels de l'industrie.",
+      "image": {
+        "alt": "Interface NutriNov - Innovation Alimentaire"
+      }
+    },
+    "roles": {
+      "title": "Profils Recherchés",
+      "subtitle": "Rejoins une équipe pluridisciplinaire",
+      "speaker": {
+        "title": "Le Speaker",
+        "skills": [
+          "Aisance orale et relationnelle",
+          "Capacités de persuasion",
+          "Sens de la synthèse",
+          "Maîtrise de PowerPoint"
+        ],
+        "bonus": "Maîtrise de l'anglais à l'oral"
+      },
+      "innovator": {
+        "title": "L'Innovateur",
+        "skills": [
+          "Pensée créative",
+          "Esprit critique et analytique",
+          "Résolution de problèmes",
+          "Curiosité et empathie"
+        ],
+        "bonus": "Connaissances en compréhension des besoins"
+      },
+      "entrepreneur": {
+        "title": "L'Entrepreneur",
+        "skills": [
+          "Culture entrepreneuriale (juridique, économique, gestion)",
+          "Compétences rédactionnelles",
+          "Rigueur et autonomie",
+          "Esprit d'initiative"
+        ],
+        "bonus": "Maîtrise de l'anglais à l'écrit"
+      },
+      "designer": {
+        "title": "Designer",
+        "skills": [
+          "Adaptabilité",
+          "Polyvalence technique",
+          "Apprentissage rapide",
+          "Développement web/mobile"
+        ],
+        "bonus": "Connaissances UX/UI"
+      },
+      "analyst": {
+        "title": "L'Analyste",
+        "skills": [
+          "Traitement et analyse de données (Python)",
+          "Maîtrise SQL et NoSQL",
+          "Visualisation de données (PowerBI)",
+          "Analyse statistique"
+        ],
+        "bonus": "Connaissances en sécurité des données et RGPD"
+      }
+    },
+    "description": {
+      "title": "À propos du projet",
+      "mission": "Notre mission est de développer une solution créative et innovante pour résoudre des problèmes concrets liés à l'alimentation. L'objectif est d'étudier les problématiques existantes dans le secteur alimentaire et de concevoir un système intelligent et viable répondant à un besoin réel.",
+      "approach": "Dans un premier temps, le projet est orienté entrepreneuriat. On identifie un problème et une population cible pour proposer une solution innovante. Ensuite, le projet devient plus technique avec le développement de la solution sous forme de prototype fonctionnel et preuve de concept validée.",
+      "partnership": {
+        "title": "Partenariat Stratégique",
+        "description": "En collaboration avec Open Food Facts et Louis Bastarache, nous travaillons sur la préparation et l'exploitation d'une base de données ouverte complète sur les produits alimentaires et leurs compositions nutritionnelles."
+      }
+    },
+    "objectives": {
+      "title": "Objectifs de la session",
+      "items": [
+        {
+          "phase": "Début W26",
+          "title": "Immersion Open Food Facts",
+          "description": "Maîtriser l'univers Open Food Facts et le secteur alimentaire au Canada"
+        },
+        {
+          "phase": "Mi-session W26",
+          "title": "Conception du questionnaire",
+          "description": "Concevoir un questionnaire adapté basé sur les règles du « Mom test »"
+        },
+        {
+          "phase": "Fin W26",
+          "title": "Collecte et analyse",
+          "description": "Recrutement de participants et analyse approfondie des réponses"
+        },
+        {
+          "phase": "Fin W26",
+          "title": "Design Thinking",
+          "description": "Application des étapes d'immersion, définition et idéation (persona, carte d'empathie, vision board)"
+        },
+        {
+          "phase": "Début W26",
+          "title": "Business Plan",
+          "description": "Élaboration d'un plan d'affaires complet et viable"
+        },
+        {
+          "phase": "Durant W26",
+          "title": "Développement du prototype",
+          "description": "Développer un prototype fonctionnel et une preuve de concept"
+        },
+        {
+          "phase": "Durant W26",
+          "title": "Traitement des données",
+          "description": "Travailler sur les données Open Food Facts"
+        },
+        {
+          "phase": "Session complète",
+          "title": "Documentation",
+          "description": "Compléter 4 rapports (2 mi-session et 2 fin de session)"
+        },
+        {
+          "phase": "Année complète",
+          "title": "Compétitions de pitch",
+          "description": "Participer à 2 pitchs d'entrepreneuriat"
+        }
+      ]
+    },
+    "technologies": {
+      "title": "Technologies & Compétences",
+      "software": {
+        "title": "Logiciels",
+        "items": ["Python", "SQL / NoSQL", "PowerBI", "Figma", "Outils de design"]
+      },
+      "hardware": {
+        "title": "Matériel",
+        "items": ["À déterminer selon le prototype développé"]
+      },
+      "skills": {
+        "title": "Compétences clés",
+        "items": [
+          "Entrepreneuriat",
+          "Analyse de données",
+          "Développement web/mobile",
+          "Pitch et présentation",
+          "Design thinking"
+        ]
+      }
+    },
+    "benefits": {
+      "title": "Pourquoi rejoindre ce projet?",
+      "items": [
+        {
+          "title": "Expérience Startup complète",
+          "description": "Vivez l'aventure entrepreneuriale de A à Z, de l'idéation au pitch final"
+        },
+        {
+          "title": "Résolution de problèmes réels",
+          "description": "Travaillez sur des enjeux concrets du secteur alimentaire avec une approche innovante"
+        },
+        {
+          "title": "Compétitions & Réseau",
+          "description": "Participez à des compétitions de pitch et développez votre réseau entrepreneurial"
+        }
+      ]
+    },
+    "team": {
+      "title": "Leadership",
+      "lead": "Chef d'équipe : Éloïse Prevot",
+      "partner": "Partenaire : Open Food Facts (Louis Bastarache)",
+      "size": "Taille de l'équipe recherchée : 5 membres"
+    },
+    "cta": {
+      "title": "Prêt à innover dans l'alimentaire?",
+      "subtitle": "Rejoins NutriNov et participe à la révolution alimentaire!",
+      "description": "Que tu sois passionné par l'entrepreneuriat, la technologie ou l'innovation alimentaire, ta place est dans notre équipe.",
+      "button": "Rejoindre NutriNov"
+    }
+  },
+  "poppy": {
+    "hero": {
+      "title": "Poppy Simulation",
+      "subtitle": "Reinforcement Learning pour Robot Humanoïde",
+      "paragraph1": "Le projet Poppy Simulation vise à développer une intelligence artificielle basée sur le Reinforcement Learning pour apprendre à un robot humanoïde Poppy à marcher de manière autonome et stable.",
+      "paragraph2": "L'entraînement s'effectue dans un environnement de simulation sophistiqué pour obtenir une démarche robuste et adaptative, avec une perspective de déploiement futur sur le robot physique. Ce projet explore les défis passionnants du transfert Sim-to-Real.",
+      "image": {
+        "alt": "Robot Poppy en simulation"
+      }
+    },
+    "team": {
+      "title": "Leadership du projet",
+      "leads": "Chefs d'équipe : Baptiste Bonin & Jonathan Caron-Roberge",
+      "partner": "Partenaire industriel : Vooban",
+      "size": "Taille de l'équipe recherchée : 5 membres",
+      "profiles": "Profils : Reinforcement Learning, Vision par ordinateur, Simulation robotique, Python avancé"
+    },
+    "objectives": {
+      "title": "Objectifs & Livrables",
+      "main": {
+        "title": "Objectif Principal",
+        "description": "Développer un modèle de Reinforcement Learning capable de faire marcher le robot Poppy en simulation de façon robuste et stable."
+      },
+      "deliverables": {
+        "title": "Livrables Attendus",
+        "items": [
+          {
+            "title": "Environnement de simulation fonctionnel",
+            "description": "Setup complet de l'environnement virtuel Poppy"
+          },
+          {
+            "title": "Modèle RL entraîné",
+            "description": "Modèle optimisé pour une marche stable et robuste"
+          },
+          {
+            "title": "Documentation technique",
+            "description": "Documentation complète des algorithmes implémentés"
+          },
+          {
+            "title": "Pipeline Sim2Real",
+            "description": "Préparation au transfert simulation vers robot physique"
+          }
+        ]
+      }
+    },
+    "timeline": {
+      "title": "Timeline de la session",
+      "weeks": [
+        {
+          "period": "Semaines 1-2",
+          "title": "Initialisation",
+          "description": "Overview du projet avec l'équipe et revue de littérature pour l'entraînement de robots humanoïdes"
+        },
+        {
+          "period": "Semaines 3-5",
+          "title": "Sélection d'algorithme",
+          "description": "Tests et sélection de l'algorithme d'entraînement optimal"
+        },
+        {
+          "period": "Semaines 6-7",
+          "title": "Entraînement",
+          "description": "Entraînement intensif et optimisation des hyperparamètres"
+        },
+        {
+          "period": "Semaines 8-9",
+          "title": "Module de connexion",
+          "description": "Implémentation du module de connexion au robot physique et revue de littérature Sim2Real"
+        },
+        {
+          "period": "Semaines 10-11",
+          "title": "Préparation au transfert",
+          "description": "Ajustement et réentraînement en préparation du transfert physique"
+        },
+        {
+          "period": "Semaines 12-13",
+          "title": "Tests physiques",
+          "description": "Tests sur le robot physique et rédaction du rapport final"
+        }
+      ]
+    },
+    "technologies": {
+      "title": "Technologies & Compétences",
+      "software": {
+        "title": "Stack Logiciel",
+        "items": ["Python", "PyTorch", "OpenAI Gym", "Bibliothèques RL", "Environnements de simulation"]
+      },
+      "hardware": {
+        "title": "Matériel",
+        "items": ["GPU (accès optionnel en fin de session)", "Robot Poppy physique (tests finaux)"]
+      },
+      "skills": {
+        "title": "Compétences visées",
+        "items": [
+          "Reinforcement Learning",
+          "Simulation robotique",
+          "Optimisation ML",
+          "Python avancé",
+          "Transfert Sim2Real"
+        ]
+      }
+    },
+    "technical": {
+      "title": "Approche Technique",
+      "rl": {
+        "title": "Reinforcement Learning",
+        "description": "Utilisation d'algorithmes RL avancés (PPO, SAC, TD3) pour apprendre une politique de marche robuste à travers des millions d'itérations en simulation."
+      },
+      "simulation": {
+        "title": "Environnement de Simulation",
+        "description": "Développement d'un environnement de simulation physiquement réaliste avec modélisation précise de la dynamique et des contraintes du robot Poppy."
+      },
+      "sim2real": {
+        "title": "Transfert Sim2Real",
+        "description": "Stratégies pour minimiser l'écart réalité-simulation : domain randomization, apprentissage de représentations robustes, fine-tuning adaptatif."
+      }
+    },
+    "benefits": {
+      "title": "Pourquoi rejoindre ce projet?",
+      "items": [
+        {
+          "title": "Robotique concrète",
+          "description": "Travaillez sur une vraie application du RL en robotique avec un robot humanoïde réel"
+        },
+        {
+          "title": "Interface Sim2Real",
+          "description": "Explorez les défis passionnants du transfert simulation vers réel"
+        },
+        {
+          "title": "Impact tangible",
+          "description": "Contribuez à faire marcher un vrai robot humanoïde de façon autonome"
+        }
+      ]
+    },
+    "resources": {
+      "title": "Ressources & Références",
+      "poppy": "Documentation officielle du projet Poppy",
+      "vooban": "Support et expertise de Vooban",
+      "github": "Repository GitHub du projet (à venir)"
+    },
+    "cta": {
+      "title": "Prêt à faire marcher Poppy?",
+      "subtitle": "Rejoins l'équipe et donne vie à l'intelligence robotique!",
+      "description": "Si tu es passionné par le Reinforcement Learning, la robotique ou l'IA appliquée, ce projet est pour toi.",
+      "button": "Rejoindre Poppy Simulation"
+    }
+  },
+  "poppyConception": {
+    "meta": {
+      "title": "Poppy Conception - Robot Humanoïde Open-Source | Club IA ULaval",
+      "description": "Impression 3D, conception mécanique et électronique d'un robot humanoïde open-source. Rejoignez le projet pour explorer la robotique et la fabrication additive."
+    },
+    "hero": {
+      "title": "Poppy Conception",
+      "subtitle": "Construction d'un Robot Humanoïde Open-Source",
+      "paragraph1": "Rejoignez une équipe multidisciplinaire pour concevoir et assembler un robot humanoïde Poppy, entièrement open-source. Ce projet combine impression 3D, conception mécanique, électronique embarquée et programmation pour donner vie à un robot capable d'interagir avec son environnement.",
+      "paragraph2": "Contrairement au projet Poppy Simulation qui se concentre sur l'IA, ce projet met l'accent sur la fabrication physique et l'assemblage du robot. C'est l'occasion parfaite pour les passionnés de hardware et de fabrication de mettre les mains dans le cambouis!"
+    },
+    "team": {
+      "title": "Leadership du projet",
+      "leads": "Chefs d'équipe : Baptiste Bonin & Jonathan Caron-Roberge",
+      "size": "Taille de l'équipe recherchée : 5 membres",
+      "profiles": "Profils : Impression 3D, Électronique, Mécanique, Programmation embarquée"
+    },
+    "objectives": {
+      "title": "Objectifs du Projet",
+      "main": {
+        "title": "Objectif Principal",
+        "description": "Concevoir, imprimer et assembler un robot humanoïde Poppy fonctionnel capable de mouvements coordonnés et d'interactions avec son environnement."
+      },
+      "items": [
+        {
+          "title": "Impression 3D",
+          "description": "Modélisation et impression de toutes les pièces structurelles du robot"
+        },
+        {
+          "title": "Assemblage mécanique",
+          "description": "Intégration des articulations, servomoteurs et structure"
+        },
+        {
+          "title": "Électronique embarquée",
+          "description": "Conception et soudure des circuits de contrôle"
+        },
+        {
+          "title": "Programmation",
+          "description": "Développement des contrôleurs moteurs et capteurs"
+        },
+        {
+          "title": "Tests & Validation",
+          "description": "Tests fonctionnels et calibration du robot"
+        }
+      ]
+    },
+    "timeline": {
+      "title": "Timeline de la Session",
+      "items": [
+        {
+          "period": "Semaines 1-3",
+          "title": "Impression 3D",
+          "description": "Impression de toutes les pièces du robot et préparation des composants"
+        },
+        {
+          "period": "Semaines 4-6",
+          "title": "Assemblage mécanique",
+          "description": "Montage de la structure, intégration des servomoteurs et articulations"
+        },
+        {
+          "period": "Semaines 7-9",
+          "title": "Électronique",
+          "description": "Câblage, soudure des circuits et connexion des composants"
+        },
+        {
+          "period": "Semaines 10-11",
+          "title": "Programmation",
+          "description": "Développement des contrôleurs et premiers tests de mouvement"
+        },
+        {
+          "period": "Semaines 12-13",
+          "title": "Finalisation",
+          "description": "Tests complets, calibration et documentation"
+        }
+      ]
+    },
+    "skills": {
+      "title": "Compétences Développées",
+      "items": [
+        {
+          "title": "Fabrication additive",
+          "description": "Maîtrise de l'impression 3D et de la préparation des fichiers"
+        },
+        {
+          "title": "Mécanique & Robotique",
+          "description": "Assemblage, ajustement et intégration de systèmes mécaniques"
+        },
+        {
+          "title": "Électronique embarquée",
+          "description": "Soudure, câblage et conception de circuits"
+        },
+        {
+          "title": "Programmation Python/C++",
+          "description": "Contrôle de moteurs, capteurs et systèmes embarqués"
+        },
+        {
+          "title": "Travail en équipe",
+          "description": "Collaboration multidisciplinaire sur un projet concret"
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Pourquoi Rejoindre Ce Projet?",
+      "items": [
+        {
+          "title": "Robot réel",
+          "description": "Participez à la création d'un vrai robot humanoïde que vous pourrez voir fonctionner"
+        },
+        {
+          "title": "Open-source",
+          "description": "Découvrez la robotique open-source et contribuez à un projet accessible à tous"
+        },
+        {
+          "title": "Équipe passionnée",
+          "description": "Collaborez avec des étudiants motivés partageant votre passion pour le hardware"
+        },
+        {
+          "title": "Expérience valorisante",
+          "description": "Ajoutez une expérience concrète et impressionnante à votre CV"
+        }
+      ]
+    },
+    "resources": {
+      "title": "Ressources & Références",
+      "poppy": "Documentation officielle du projet Poppy"
+    },
+    "cta": {
+      "title": "Prêt à construire Poppy?",
+      "subtitle": "Rejoins l'équipe et donne vie à un robot humanoïde!",
+      "description": "Si tu es passionné par le hardware, l'impression 3D ou la robotique, ce projet est fait pour toi.",
+      "button": "Rejoindre Poppy Conception"
+    }
+  },
+  "sgdbeyond": {
+    "hero": {
+      "title": "Stochastic Gradient Descent, and Beyond!",
+      "subtitle": "Recherche en Optimisation Stochastique",
+      "paragraph1": "Vous êtes-vous déjà demandé pourquoi votre modèle d'IA converge parfois vers une solution médiocre alors qu'il pourrait faire tellement mieux ? La réponse se cache souvent dans l'algorithme d'optimisation.",
+      "paragraph2": "La descente de gradient stochastique (SGD) est le moteur derrière l'entraînement de pratiquement tous les modèles de deep learning. Pourtant, malgré 20 ans d'utilisation, cet algorithme reste imparfait : il se coince dans des minima locaux et rate souvent les meilleures solutions.",
+      "image": {
+        "alt": "Visualisation de la descente de gradient"
+      }
+    },
+    "team": {
+      "title": "Leadership",
+      "lead": "Team Lead: Benjamin Leblanc",
+      "type": "Type: Publication scientifique",
+      "size": "Effectif recherché: 5 membres"
+    },
+    "mission": {
+      "title": "Notre Mission",
+      "understanding": {
+        "title": "Comprendre Pourquoi",
+        "description": "Analyser en profondeur pourquoi SGD se coince dans des minima locaux et rate les meilleures solutions"
+      },
+      "hypothesis": {
+        "title": "Notre Hypothèse",
+        "description": "Injecter du « bruit » intelligent dans le processus d'optimisation pourrait aider le modèle à explorer de meilleures solutions"
+      },
+      "goal": {
+        "title": "Objectif Concret",
+        "description": "Publier nos résultats dans une conférence de type workshop"
+      },
+      "status": "Le projet est déjà bien avancé — les avenues de recherche prometteuses sont identifiées et l'exploitation a commencé. Vous rejoignez une équipe en pleine action !"
+    },
+    "objectives": {
+      "title": "Objectifs & Livrables",
+      "main": "Soumettre un article de recherche dans une conférence de type workshop",
+      "deliverables": {
+        "title": "Livrables Attendus",
+        "items": [
+          {
+            "title": "Grille de recherche exhaustive",
+            "description": "Exploration systématique de l'injection optimale de bruit"
+          },
+          {
+            "title": "Expérimentations à grande échelle",
+            "description": "Tests sur des modèles réels de classification d'images"
+          },
+          {
+            "title": "Article scientifique",
+            "description": "Manuscrit complet prêt pour soumission"
+          }
+        ]
+      }
+    },
+    "timeline": {
+      "title": "Timeline Prévisionnelle",
+      "weeks": [
+        {
+          "period": "Semaines 1-3",
+          "title": "Paramétrisation du bruit",
+          "description": "Comment injecter le bruit de façon optimale ?"
+        },
+        {
+          "period": "Semaines 4-6",
+          "title": "Relation bruit/gradient",
+          "description": "Trouver le bon équilibre entre bruit et estimations de gradient"
+        },
+        {
+          "period": "Semaines 7-9",
+          "title": "Expérimentation à grande échelle",
+          "description": "Tests sur des vrais modèles de classification d'images"
+        },
+        {
+          "period": "Semaines 10-12",
+          "title": "Rédaction",
+          "description": "Version préliminaire de l'article scientifique"
+        },
+        {
+          "period": "Semaines 12+",
+          "title": "Finalisation & soumission",
+          "description": "Révisions finales et soumission à la conférence"
+        }
+      ]
+    },
+    "technologies": {
+      "title": "Technologies & Compétences",
+      "software": {
+        "title": "Stack Logiciel",
+        "items": ["Python", "PyTorch / TensorFlow", "Jupyter Notebooks", "LaTeX", "GPU Computing"]
+      },
+      "hardware": {
+        "title": "Matériel",
+        "items": ["GPU (accès fourni pour les expérimentations)", "Cluster de calcul haute performance"]
+      },
+      "skills": {
+        "title": "Compétences Visées",
+        "items": [
+          "Optimisation stochastique",
+          "Théorie des probabilités",
+          "Deep Learning",
+          "Rédaction scientifique",
+          "Analyse expérimentale"
+        ]
+      }
+    },
+    "profiles": {
+      "title": "Profils Recherchés",
+      "programmer": {
+        "title": "Programmeur",
+        "description": "Bases solides en Python et frameworks de deep learning",
+        "skills": ["Python avancé", "PyTorch/TensorFlow", "Expérimentation ML", "Optimisation de code"]
+      },
+      "theorist": {
+        "title": "Théoricien",
+        "description": "Notions en probabilités et calcul intégral",
+        "skills": ["Mathématiques appliquées", "Probabilités", "Calcul différentiel", "Analyse théorique"]
+      },
+      "note": "Pas besoin d'être expert — la curiosité et la motivation comptent autant que les compétences techniques !"
+    },
+    "benefits": {
+      "title": "Pourquoi Rejoindre Ce Projet ?",
+      "items": [
+        {
+          "title": "Comprendre le Deep Learning",
+          "description": "Découvrez ce qui se passe vraiment sous le capot du deep learning"
+        },
+        {
+          "title": "Publication Scientifique",
+          "description": "Contribuez à une vraie publication et ajoutez-la à votre CV académique"
+        },
+        {
+          "title": "Théorie + Pratique",
+          "description": "Projet où la théorie mathématique rencontre l'expérimentation concrète"
+        },
+        {
+          "title": "Objectif Atteignable",
+          "description": "Projet avancé avec un objectif concret et réalisable cette session"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Prêt à Optimiser l'Optimisation ?",
+      "subtitle": "Rejoignez l'équipe de recherche et contribuez à la science !",
+      "description": "Si vous aimez la théorie mathématique, la programmation et la recherche scientifique, ce projet combine tout ce que vous aimez.",
+      "button": "Rejoindre la Recherche"
+    }
+  },
+  "canlock": {
+    "meta": {
+      "title": "CANlock - Détection d'anomalies CAN avec Thales | Club IA ULaval",
+      "description": "Projet partenaire avec Thales pour la détection intelligente d'attaques sur le bus CAN des véhicules."
+    },
+    "hero": {
+      "badge": "Projet Partenaire",
+      "title": "CANlock",
+      "subtitle": "Sécurisez les véhicules de demain avec l'IA",
+      "description": "Aidez une équipe en cybersécurité à sécuriser une flotte de véhicules terrestres en étudiant les signaux échangés entre les capteurs et les actuateurs via le bus de données CAN (Controller Area Network). L'objectif : assurer la sécurité globale du véhicule, et par extension, celle de ses occupants.",
+      "members": "1-2 membres recherchés",
+      "teamLead": "Team Lead : Loïc Baret",
+      "cybersecurityLabel": "Cybersécurité Automobile"
+    },
+    "profiles": {
+      "title": "Profils Recherchés",
+      "items": [
+        { "title": "IA / Data Science", "desc": "Maîtrise des algorithmes de ML et traitement de données" },
+        { "title": "Cybersécurité", "desc": "Intérêt pour la sécurité des systèmes et réseaux" },
+        { "title": "Systèmes Embarqués", "desc": "Connaissance des protocoles de communication véhiculaires" }
+      ]
+    },
+    "challenge": {
+      "title": "Le Défi",
+      "threat": {
+        "title": "La Menace",
+        "description": "Les véhicules modernes intègrent de plus en plus d'unités électroniques embarquées qui échangent des données critiques via le bus CAN. Un attaquant qui accède au réseau CAN peut :",
+        "items": [
+          "Injecter des messages frauduleux",
+          "Modifier les commandes de freinage",
+          "Altérer la direction du véhicule",
+          "Manipuler les affichages critiques"
+        ]
+      },
+      "falsePositives": {
+        "title": "Le Problème des Faux Positifs",
+        "description1": "Les modèles actuels atteignent des taux d'erreur",
+        "errorRate": "<1%",
+        "description2": "ce qui semble performant. Mais avec des",
+        "signalsPerMinute": "centaines de milliers de signaux par minute",
+        "description3": "cela génère :",
+        "stat": "~1000+",
+        "statLabel": "faux positifs par minute",
+        "statNote": "Rendant la détection inexploitable en pratique"
+      }
+    },
+    "objectives": {
+      "title": "Objectifs & Livrables",
+      "main": {
+        "title": "Objectif Principal",
+        "description": "Concevoir un modèle/algorithme de détection d'anomalies plus performant pour",
+        "highlight": "réduire drastiquement les faux positifs",
+        "description2": "sur le bus CAN, tout en identifiant les anomalies réellement critiques."
+      },
+      "deliverables": {
+        "title": "Livrables Attendus",
+        "items": [
+          "Pipeline(s) de traitement des données et modèle(s) testé(s)",
+          "Rapport technique de mi-session et de fin de session",
+          "Article de recherche ou preuve de concept pour Thales"
+        ]
+      }
+    },
+    "timeline": {
+      "title": "Timeline de la Session",
+      "week": "Semaine",
+      "items": [
+        { "weeks": "1-2", "phase": "Onboarding", "description": "Familiarisation avec l'algorithme existant, les outils et le domaine (bus CAN)." },
+        { "weeks": "3-4", "phase": "Recherche de solutions", "description": "Proposition et étude de pistes d'amélioration." },
+        { "weeks": "5-7", "phase": "Développement - Phase 1", "description": "Itérations sur le traitement des données et premier pipeline modèle." },
+        { "weeks": "8", "phase": "Présentation #1", "description": "Rapport de mi-session et présentation d'avancement." },
+        { "weeks": "9-12", "phase": "Développement - Phase 2", "description": "Itérations d'amélioration et tests des modèles." },
+        { "weeks": "13-15", "phase": "Finalisation", "description": "Tests finaux, rédaction du rapport technique final et documentation." }
+      ]
+    },
+    "tech": {
+      "title": "Technologies & Compétences",
+      "stack": {
+        "title": "Stack Technique",
+        "note": "Machine avec GPU fournie • Données CAN disponibles"
+      },
+      "skills": {
+        "title": "Compétences Développées",
+        "items": [
+          "Analyse de données",
+          "Machine Learning pour la cybersécurité",
+          "Reverse engineering",
+          "Travail sur projet industriel réel",
+          "Rédaction technique"
+        ]
+      }
+    },
+    "whyJoin": {
+      "title": "Pourquoi Rejoindre CANlock ?",
+      "intro": "Tu vas aimer ce projet si...",
+      "items": [
+        { "title": "Challenge Industriel", "desc": "Tu veux travailler sur un challenge de cybersécurité concret et critique avec un leader mondial (Thales)." },
+        { "title": "IA pour la Sécurité", "desc": "Tu es intéressé par l'IA appliquée à la détection d'anomalies et la protection des systèmes critiques." },
+        { "title": "Expérience CV", "desc": "Tu veux acquérir une expérience précieuse et concrète qui impressionnera sur ton CV." }
+      ]
+    },
+    "cta": {
+      "title": "Prêt à protéger les véhicules de demain ?",
+      "subtitle": "Rejoins l'équipe CANlock !",
+      "discord": "Rejoindre sur Discord"
+    }
+  },
+  "drone": {
+    "hero": {
+      "title": "Drone Laser Tag",
+      "subtitle": "Compétition de Drones Autonomes",
+      "paragraph1": "Le projet consiste à concevoir un drone et un algorithme de conduite autonome pour lui permettre de compétitionner dans une compétition de laser tag pour drones.",
+      "paragraph2": "On sort des terrains battus, et on part à l'aventure à la frontière de ce que la technologie nous permet. Le tout, en compétition contre les autres grandes Universités du Québec ! Attache ta tuque, parce que ça va être un projet pas comme les autres.",
+      "image": {
+        "alt": "Drone FPV en action"
+      }
+    },
+    "team": {
+      "title": "Leadership",
+      "lead": "Team Lead: Anthony Lavertu",
+      "partner": "Partenaires: Philippe Giguère / Tracel AI",
+      "size": "Effectif: 10 membres"
+    },
+    "roles": {
+      "title": "Profils et Rôles Recherchés",
+      "gel": {
+        "title": "GEL / GIF",
+        "count": "2 membres",
+        "description": "S'occuper de la communication entre le drone, l'ordinateur central et toutes les pièces du pipeline. Optimisation et minimisation de la latence de transmission. Émulation de la manette pour communiquer avec le Flight Controller.",
+        "skills": ["Communication drone-ordinateur", "Optimisation latence", "C et Python", "Hardware et embedded"]
+      },
+      "simulation": {
+        "title": "Simulation",
+        "count": "2 membres",
+        "description": "Concevoir une simulation complète du système et des drones avec Isaac Sim.",
+        "skills": ["Isaac Sim", "CAD et modélisation", "Python", "Physique et simulation"]
+      },
+      "ai": {
+        "title": "IA / Code",
+        "count": "1 membre",
+        "description": "Concevoir un détecteur d'objets pour détecter les drones ennemis et estimer leur orientation. Détecter les murs et le plafond pour éviter les collisions.",
+        "skills": ["Computer Vision", "Rust", "Détection d'objets", "SLAM"]
+      },
+      "pilots": {
+        "title": "Pilotes",
+        "count": "3 membres",
+        "description": "Excellents pilotes de drones FPV jouant au laser tag avec leurs drones. Leur rôle : générer des données pour entraîner l'IA.",
+        "skills": ["Pilotage FPV expert", "Laser tag drone", "Génération de données", "Test et validation"]
+      }
+    },
+    "objectives": {
+      "title": "Objectifs du Projet",
+      "main": "Gagner la compétition",
+      "subtitle": "Plus précisément, le projet consiste à :",
+      "drone": {
+        "title": "Construire le Drone",
+        "items": [
+          "Drone FPV avec capteurs multiples sous 250g",
+          "Maximiser la maniabilité",
+          "Minimiser la latence de transmission",
+          "Faire rouler une IA onboard"
+        ]
+      },
+      "ai": {
+        "title": "Développer l'IA",
+        "items": [
+          "Détection d'objets en temps réel",
+          "SLAM pour navigation autonome",
+          "Reinforcement Learning",
+          "Simulation complète avec Isaac Sim"
+        ]
+      },
+      "deliverables": {
+        "title": "Livrables Attendus",
+        "items": [
+          "Drone FPV fonctionnel avec capteurs (<250g)",
+          "Simulation Isaac Sim opérationnelle",
+          "IA capable de piloter le drone de manière autonome"
+        ]
+      }
+    },
+    "commitment": {
+      "title": "Conditions d'Engagement",
+      "subtitle": "Ce projet demande un engagement sérieux",
+      "items": [
+        "Disponibilité durant toute l'année 2026 (été et automne)",
+        "Minimum 5 heures par semaine",
+        "Profil sérieux, motivé et engagé requis",
+        "Esprit compétitif et travail d'équipe"
+      ]
+    },
+    "technologies": {
+      "title": "Technologies & Compétences",
+      "hardware": {
+        "title": "Matériels",
+        "items": [
+          "Drone FPV personnalisé",
+          "Caméras (mono et stéréo)",
+          "Lidar et ToF",
+          "Blaster et receiver laser",
+          "IMU et capteurs",
+          "Isaac Sim"
+        ]
+      },
+      "skills": {
+        "title": "Compétences Visées",
+        "items": [
+          "Programmation embarquée",
+          "Électronique et télécommunications",
+          "Reinforcement Learning",
+          "Computer Vision et Deep Learning",
+          "Robotique mobile",
+          "Pilotage FPV",
+          "Prototypage rapide"
+        ]
+      }
+    },
+    "benefits": {
+      "title": "Pourquoi Rejoindre Ce Projet ?",
+      "items": [
+        {
+          "title": "Projet à la Limite du Possible",
+          "description": "Aventure technologique à la frontière de ce qui est réalisable avec la tech actuelle"
+        },
+        {
+          "title": "Compétition Universitaire",
+          "description": "Affrontez les meilleures équipes du Québec dans une vraie compétition"
+        },
+        {
+          "title": "Hardware + Software",
+          "description": "Projet concret combinant conception de drone, IA embarquée et pilotage autonome"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Prêt pour l'Aventure ?",
+      "subtitle": "Rejoignez l'équipe et participez à une compétition unique !",
+      "description": "Si tu es prêt à mettre du temps, que tu aimes les défis techniques extrêmes et que tu veux gagner, ce projet est fait pour toi.",
+      "button": "Rejoindre l'Équipe Drone"
     }
   }
 }

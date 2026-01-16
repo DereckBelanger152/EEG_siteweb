@@ -10,26 +10,52 @@
     },
     "projects": {
       "title": "Discover our innovative projects!",
+      "subtitle": "Discover our innovative projects!",
       "flapeeg": {
         "title": "FlapEEG",
-        "description": "A mind-controlled video game"
+        "description": "An innovative video game controlled by brain waves (EEG). Discover how AI and neurotechnology let you pilot a virtual bird with your thoughts. A pioneer brain–computer interface project open to every profile (neuro, AI, dev, design)."
       },
       "f1tenth": {
         "title": "F1Tenth",
-        "description": "EMG racing with 1:10th-scale F1 cars"
+        "description": "Autonomous racing with 1:10th-scale F1 cars powered by EMG (muscle) signals and embedded AI. Join the team to design control algorithms, work on embedded robotics, and take part in technical competitions. Open to robotics, AI, hardware, and software enthusiasts."
       },
       "decisiontree": {
         "title": "TreeCore",
-        "description": "Research and development of decision trees"
+        "description": "Research and development around decision trees: explore classic and advanced algorithms, optimize automated decision-making, and help deliver open-source tooling for AI. Ideal for students in data science, mathematics, and computer science."
       },
       "lenia": {
         "title": "Lenia",
-        "description": "Autonomous cellular automata"
+        "description": "Autonomous cellular automata inspired by artificial life: simulate virtual creatures capable of emergence, evolution, and interaction. This project combines mathematics, simulation, AI, and scientific visualization. Join us to explore digital life and creative algorithms."
       },
       "mangaai": {
         "title": "MangaAI",
-        "description": "Automatic manga translation and analysis"
+        "description": "Automatic manga translation and analysis powered by AI: OCR, NLP, dialogue generation, and style analysis. Help build tools for Japanese culture, computational linguistics, and computer vision. Perfect for fans of AI, manga, and language processing."
       },
+      "canlock": {
+        "title": "CANlock",
+        "description": "Partner project with Thales: design an intelligent system to detect attacks on the vehicle CAN bus. Objective: reduce false positives and deliver a production-ready pipeline. Profiles sought: AI/Data, Cybersecurity, Embedded."
+      },
+      "drone": {
+        "title": "Drone - Laser Tag",
+        "description": "Build a turnkey laser system for an autonomous FPV competition: 180° sensor, emission module, custom PCB, and centralized management software. Academic partner: Philippe Giguère. Team Lead: Anthony Lavertu."
+      },
+      "sgd-beyond": {
+        "title": "SGD - Beyond",
+        "description": "Analyze and enhance a foundational AI algorithm (SGD) by integrating a noise-based optimization method. Find more details and code on GitHub."
+      },
+      "nutrinov": {
+        "title": "NutriNov",
+        "description": "Identify a real nutritional challenge and develop a viable tech prototype — in partnership with Open Food Facts. Project type: Entrepreneurial initiative. Team Lead: Eloïse Prevot."
+      },
+      "poppy-conception": {
+        "title": "Poppy Humanoid (Conception)",
+        "description": "3D print components, assemble joints, and integrate electronics for an open-source humanoid robot. Join the project to contribute to mechanical and mechatronic design."
+      },
+      "poppy-simulation": {
+        "title": "Poppy Humanoid (Simulation)",
+        "description": "Teach a robot to walk by developing reinforcement learning algorithms in simulation and transferring them to the real robot. Join the project to explore robotic AI."
+      },
+      "imageComing": "Project image coming soon",
       "learnMore": "Learn more",
       "github": "GitHub"
     },
@@ -135,6 +161,7 @@
       "roleAmen": "ASL-Decoder Team Lead & Project Manager",
       "roleVincent": "Project Manager",
       "president": "President",
+      "vicePresident": "Vice-President",
       "projectsLeader": "Projects Leader",
       "logisticsLeader": "Logistics Leader",
       "logisticsManager": "Logistics Manager",
@@ -143,6 +170,7 @@
       "talentsLeader": "Talents Leader",
       "activitiesLeader": "Activities Leader",
       "recruitmentManager": "Recruitment Manager",
+      "recruitmentAssistant": "Recruitment Assistant",
       "engagementManager": "Engagement Manager",
       "externalRelationsManager": "External Relations Manager",
       "partnershipsManager": "Partnerships Manager",
@@ -163,7 +191,40 @@
     "vacantPosition": "Vacant Position",
     "positionInInterview": "Position under interview",
     "viewLinkedIn": "View LinkedIn",
+    "viewProfile": "View Profile",
     "linkedIn": "LinkedIn",
+    "modal": {
+      "name": "Name",
+      "role": "Role",
+      "mission": "Mission",
+      "aboutMe": "About Me",
+      "connect": "Connect",
+      "noDetails": "No additional information available."
+    },
+    "aboutMe": {
+      "dereck": "Hi, my name is Dereck! I am very passionate about computer science in general but mostly AI, cybersecurity and web development. Outside work/school, I do mixed martial arts and run a bunch. I love neuroscience and chess. Feel free to contact me if you have questions about the club, requests for the website or want to chat!"
+    },
+    "missions": {
+      "nathaniel": "Guide leaders to respect the Club's mission, culture and vision",
+      "louis": "Ensure all Club Admins have everything they need",
+      "jade": "Guide the team to recruit 300 members per session",
+      "douae": "Recruit students and follow their integration into the Club",
+      "rana": "Ensure presence at visibility activities (open houses, festivals, etc.)",
+      "alexandrine": "Guide the team to obtain $50,000",
+      "mihal": "Form partnerships and complete funding applications",
+      "adriana": "Manage the budget and invoices",
+      "anthony": "Manage relations with organizations at Laval University and internationally",
+      "yves": "Guide the team to reach 900 LinkedIn followers",
+      "hibaComm": "Create the announcements calendar and ensure follow-up",
+      "youssouf": "Design merch, visuals, the new Club logo and website",
+      "dereck": "Create, maintain and update the website",
+      "eleonore": "Build connections between 500 members through 30 events",
+      "william": "Organize outings (board game nights, 5@7, sports, etc.)",
+      "nora": "Organize activities to recognize achievements",
+      "jordan": "Supervise 50 students in projects per session",
+      "guilhem": "Train members according to project needs",
+      "amen": "Launch new projects by recruiting Team Leads and Team Members"
+    },
     "structuredData": {
       "name": "Team and Leadership - Artificial Intelligence Club Laval University",
       "description": "CIA ULaval leadership team with president, leaders and managers",
@@ -598,6 +659,846 @@
     },
     "team": {
       "title": "Meet the team behind the project"
+    }
+  },
+  "nutrinov": {
+    "hero": {
+      "title": "NutriNov",
+      "subtitle": "Food Innovation & AI Entrepreneurship",
+      "paragraph1": "NutriNov is an innovative entrepreneurial project aimed at revolutionizing the food sector through artificial intelligence. Our mission is to identify and solve concrete problems related to food by developing creative and viable technological solutions.",
+      "paragraph2": "In partnership with Open Food Facts, we leverage a comprehensive open database on food products to create intelligent systems that meet the real needs of consumers and industry professionals.",
+      "image": {
+        "alt": "NutriNov Interface - Food Innovation"
+      }
+    },
+    "roles": {
+      "title": "Profiles Sought",
+      "subtitle": "Join a multidisciplinary team",
+      "speaker": {
+        "title": "The Speaker",
+        "skills": [
+          "Oral and relational ease",
+          "Persuasive skills",
+          "Synthetic thinking",
+          "PowerPoint mastery"
+        ],
+        "bonus": "Oral English proficiency"
+      },
+      "innovator": {
+        "title": "The Innovator",
+        "skills": [
+          "Creative thinking",
+          "Critical and analytical mind",
+          "Problem solving",
+          "Curiosity and empathy"
+        ],
+        "bonus": "Knowledge in needs understanding"
+      },
+      "entrepreneur": {
+        "title": "The Entrepreneur",
+        "skills": [
+          "Entrepreneurial culture (legal, economic, management)",
+          "Writing skills",
+          "Rigor and autonomy",
+          "Initiative spirit"
+        ],
+        "bonus": "Written English proficiency"
+      },
+      "designer": {
+        "title": "Designer",
+        "skills": [
+          "Adaptability",
+          "Technical versatility",
+          "Fast learning",
+          "Web/mobile development"
+        ],
+        "bonus": "UX/UI knowledge"
+      },
+      "analyst": {
+        "title": "The Analyst",
+        "skills": [
+          "Data processing and analysis (Python)",
+          "SQL and NoSQL mastery",
+          "Data visualization (PowerBI)",
+          "Statistical analysis"
+        ],
+        "bonus": "Data security and GDPR knowledge"
+      }
+    },
+    "description": {
+      "title": "About the Project",
+      "mission": "Our mission is to develop a creative and innovative solution to solve concrete problems related to food. The objective is to study existing problems in the food sector and design an intelligent and viable system to meet a real need.",
+      "approach": "Initially, the project is entrepreneurship-oriented. We identify a problem and a target population to propose an innovative solution. Then, the project becomes more technical with the development of the solution in the form of a functional prototype and validated proof of concept.",
+      "partnership": {
+        "title": "Strategic Partnership",
+        "description": "In collaboration with Open Food Facts and Louis Bastarache, we work on preparing and exploiting a comprehensive open database on food products and their nutritional compositions."
+      }
+    },
+    "objectives": {
+      "title": "Session Objectives",
+      "items": [
+        {
+          "phase": "Early W26",
+          "title": "Open Food Facts Immersion",
+          "description": "Master the Open Food Facts universe and the food sector in Canada"
+        },
+        {
+          "phase": "Mid-session W26",
+          "title": "Questionnaire Design",
+          "description": "Design an adapted questionnaire based on 'Mom test' rules"
+        },
+        {
+          "phase": "End W26",
+          "title": "Collection and Analysis",
+          "description": "Participant recruitment and in-depth response analysis"
+        },
+        {
+          "phase": "End W26",
+          "title": "Design Thinking",
+          "description": "Application of immersion, definition and ideation stages (persona, empathy map, vision board)"
+        },
+        {
+          "phase": "Early W26",
+          "title": "Business Plan",
+          "description": "Development of a complete and viable business plan"
+        },
+        {
+          "phase": "During W26",
+          "title": "Prototype Development",
+          "description": "Develop a functional prototype and proof of concept"
+        },
+        {
+          "phase": "During W26",
+          "title": "Data Processing",
+          "description": "Work on Open Food Facts data"
+        },
+        {
+          "phase": "Full session",
+          "title": "Documentation",
+          "description": "Complete 4 reports (2 mid-session and 2 end-of-session)"
+        },
+        {
+          "phase": "Full year",
+          "title": "Pitch Competitions",
+          "description": "Participate in 2 entrepreneurship pitches"
+        }
+      ]
+    },
+    "technologies": {
+      "title": "Technologies & Skills",
+      "software": {
+        "title": "Software",
+        "items": ["Python", "SQL / NoSQL", "PowerBI", "Figma", "Design tools"]
+      },
+      "hardware": {
+        "title": "Hardware",
+        "items": ["To be determined based on the developed prototype"]
+      },
+      "skills": {
+        "title": "Key Skills",
+        "items": [
+          "Entrepreneurship",
+          "Data analysis",
+          "Web/mobile development",
+          "Pitch and presentation",
+          "Design thinking"
+        ]
+      }
+    },
+    "benefits": {
+      "title": "Why Join This Project?",
+      "items": [
+        {
+          "title": "Complete Startup Experience",
+          "description": "Live the entrepreneurial adventure from A to Z, from ideation to final pitch"
+        },
+        {
+          "title": "Real Problem Solving",
+          "description": "Work on concrete food sector issues with an innovative approach"
+        },
+        {
+          "title": "Competitions & Network",
+          "description": "Participate in pitch competitions and develop your entrepreneurial network"
+        }
+      ]
+    },
+    "team": {
+      "title": "Leadership",
+      "lead": "Team Lead: Éloïse Prevot",
+      "partner": "Partner: Open Food Facts (Louis Bastarache)",
+      "size": "Sought team size: 5 members"
+    },
+    "cta": {
+      "title": "Ready to Innovate in Food?",
+      "subtitle": "Join NutriNov and participate in the food revolution!",
+      "description": "Whether you're passionate about entrepreneurship, technology or food innovation, your place is on our team.",
+      "button": "Join NutriNov"
+    }
+  },
+  "poppy": {
+    "hero": {
+      "title": "Poppy Simulation",
+      "subtitle": "Reinforcement Learning for Humanoid Robot",
+      "paragraph1": "The Poppy Simulation project aims to develop artificial intelligence based on Reinforcement Learning to teach a Poppy humanoid robot to walk autonomously and stably.",
+      "paragraph2": "Training is performed in a sophisticated simulation environment to achieve robust and adaptive walking, with a view to future deployment on the physical robot. This project explores the exciting challenges of Sim-to-Real transfer.",
+      "image": {
+        "alt": "Poppy Robot in simulation"
+      }
+    },
+    "team": {
+      "title": "Project Leadership",
+      "leads": "Team Leads: Baptiste Bonin & Jonathan Caron-Roberge",
+      "partner": "Industrial Partner: Vooban",
+      "size": "Sought team size: 5 members",
+      "profiles": "Profiles: Reinforcement Learning, Computer Vision, Robotics simulation, Advanced Python"
+    },
+    "objectives": {
+      "title": "Objectives & Deliverables",
+      "main": {
+        "title": "Main Objective",
+        "description": "Develop a Reinforcement Learning model capable of making the Poppy robot walk in simulation in a robust and stable manner."
+      },
+      "deliverables": {
+        "title": "Expected Deliverables",
+        "items": [
+          {
+            "title": "Functional simulation environment",
+            "description": "Complete setup of the Poppy virtual environment"
+          },
+          {
+            "title": "Trained RL model",
+            "description": "Optimized model for stable and robust walking"
+          },
+          {
+            "title": "Technical documentation",
+            "description": "Complete documentation of implemented algorithms"
+          },
+          {
+            "title": "Sim2Real pipeline",
+            "description": "Preparation for simulation to physical robot transfer"
+          }
+        ]
+      }
+    },
+    "timeline": {
+      "title": "Session Timeline",
+      "weeks": [
+        {
+          "period": "Weeks 1-2",
+          "title": "Initialization",
+          "description": "Project overview with team and literature review for humanoid robot training"
+        },
+        {
+          "period": "Weeks 3-5",
+          "title": "Algorithm Selection",
+          "description": "Testing and selection of optimal training algorithm"
+        },
+        {
+          "period": "Weeks 6-7",
+          "title": "Training",
+          "description": "Intensive training and hyperparameter optimization"
+        },
+        {
+          "period": "Weeks 8-9",
+          "title": "Connection Module",
+          "description": "Implementation of physical robot connection module and Sim2Real literature review"
+        },
+        {
+          "period": "Weeks 10-11",
+          "title": "Transfer Preparation",
+          "description": "Adjustment and retraining in preparation for physical transfer"
+        },
+        {
+          "period": "Weeks 12-13",
+          "title": "Physical Testing",
+          "description": "Tests on physical robot and final report writing"
+        }
+      ]
+    },
+    "technologies": {
+      "title": "Technologies & Skills",
+      "software": {
+        "title": "Software Stack",
+        "items": ["Python", "PyTorch", "OpenAI Gym", "RL Libraries", "Simulation environments"]
+      },
+      "hardware": {
+        "title": "Hardware",
+        "items": ["GPU (optional access at end of session)", "Physical Poppy robot (final tests)"]
+      },
+      "skills": {
+        "title": "Target Skills",
+        "items": [
+          "Reinforcement Learning",
+          "Robotics simulation",
+          "ML optimization",
+          "Advanced Python",
+          "Sim2Real transfer"
+        ]
+      }
+    },
+    "technical": {
+      "title": "Technical Approach",
+      "rl": {
+        "title": "Reinforcement Learning",
+        "description": "Use of advanced RL algorithms (PPO, SAC, TD3) to learn a robust walking policy through millions of simulation iterations."
+      },
+      "simulation": {
+        "title": "Simulation Environment",
+        "description": "Development of a physically realistic simulation environment with precise modeling of Poppy robot dynamics and constraints."
+      },
+      "sim2real": {
+        "title": "Sim2Real Transfer",
+        "description": "Strategies to minimize reality-simulation gap: domain randomization, robust representation learning, adaptive fine-tuning."
+      }
+    },
+    "benefits": {
+      "title": "Why Join This Project?",
+      "items": [
+        {
+          "title": "Concrete Robotics",
+          "description": "Work on real RL application in robotics with an actual humanoid robot"
+        },
+        {
+          "title": "Sim2Real Interface",
+          "description": "Explore the exciting challenges of simulation to real-world transfer"
+        },
+        {
+          "title": "Tangible Impact",
+          "description": "Contribute to making a real humanoid robot walk autonomously"
+        }
+      ]
+    },
+    "resources": {
+      "title": "Resources & References",
+      "poppy": "Official Poppy Project documentation",
+      "vooban": "Support and expertise from Vooban",
+      "github": "Project GitHub repository (coming soon)"
+    },
+    "cta": {
+      "title": "Ready to Make Poppy Walk?",
+      "subtitle": "Join the team and bring robotic intelligence to life!",
+      "description": "If you're passionate about Reinforcement Learning, robotics, or applied AI, this project is for you.",
+      "button": "Join Poppy Simulation"
+    }
+  },
+  "poppyConception": {
+    "meta": {
+      "title": "Poppy Conception - Open-Source Humanoid Robot | AI Club ULaval",
+      "description": "3D printing, mechanical design and electronics for an open-source humanoid robot. Join the project to explore robotics and additive manufacturing."
+    },
+    "hero": {
+      "title": "Poppy Conception",
+      "subtitle": "Building an Open-Source Humanoid Robot",
+      "paragraph1": "Join a multidisciplinary team to design and assemble a Poppy humanoid robot, entirely open-source. This project combines 3D printing, mechanical design, embedded electronics and programming to bring to life a robot capable of interacting with its environment.",
+      "paragraph2": "Unlike the Poppy Simulation project which focuses on AI, this project emphasizes physical fabrication and robot assembly. It's the perfect opportunity for hardware and manufacturing enthusiasts to get their hands dirty!"
+    },
+    "team": {
+      "title": "Project Leadership",
+      "leads": "Team Leads: Baptiste Bonin & Jonathan Caron-Roberge",
+      "size": "Sought team size: 5 members",
+      "profiles": "Profiles: 3D Printing, Electronics, Mechanics, Embedded Programming"
+    },
+    "objectives": {
+      "title": "Project Objectives",
+      "main": {
+        "title": "Main Objective",
+        "description": "Design, print and assemble a functional Poppy humanoid robot capable of coordinated movements and interactions with its environment."
+      },
+      "items": [
+        {
+          "title": "3D Printing",
+          "description": "Modeling and printing all structural parts of the robot"
+        },
+        {
+          "title": "Mechanical Assembly",
+          "description": "Integration of joints, servomotors and structure"
+        },
+        {
+          "title": "Embedded Electronics",
+          "description": "Design and soldering of control circuits"
+        },
+        {
+          "title": "Programming",
+          "description": "Development of motor controllers and sensors"
+        },
+        {
+          "title": "Testing & Validation",
+          "description": "Functional testing and robot calibration"
+        }
+      ]
+    },
+    "timeline": {
+      "title": "Session Timeline",
+      "items": [
+        {
+          "period": "Weeks 1-3",
+          "title": "3D Printing",
+          "description": "Printing all robot parts and preparing components"
+        },
+        {
+          "period": "Weeks 4-6",
+          "title": "Mechanical Assembly",
+          "description": "Structure mounting, servomotor and joint integration"
+        },
+        {
+          "period": "Weeks 7-9",
+          "title": "Electronics",
+          "description": "Wiring, circuit soldering and component connection"
+        },
+        {
+          "period": "Weeks 10-11",
+          "title": "Programming",
+          "description": "Controller development and first movement tests"
+        },
+        {
+          "period": "Weeks 12-13",
+          "title": "Finalization",
+          "description": "Complete testing, calibration and documentation"
+        }
+      ]
+    },
+    "skills": {
+      "title": "Skills Developed",
+      "items": [
+        {
+          "title": "Additive Manufacturing",
+          "description": "Mastery of 3D printing and file preparation"
+        },
+        {
+          "title": "Mechanics & Robotics",
+          "description": "Assembly, adjustment and integration of mechanical systems"
+        },
+        {
+          "title": "Embedded Electronics",
+          "description": "Soldering, wiring and circuit design"
+        },
+        {
+          "title": "Python/C++ Programming",
+          "description": "Motor control, sensors and embedded systems"
+        },
+        {
+          "title": "Teamwork",
+          "description": "Multidisciplinary collaboration on a concrete project"
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Why Join This Project?",
+      "items": [
+        {
+          "title": "Real Robot",
+          "description": "Participate in creating a real humanoid robot that you'll see working"
+        },
+        {
+          "title": "Open-Source",
+          "description": "Discover open-source robotics and contribute to an accessible project"
+        },
+        {
+          "title": "Passionate Team",
+          "description": "Collaborate with motivated students sharing your passion for hardware"
+        },
+        {
+          "title": "Valuable Experience",
+          "description": "Add a concrete and impressive experience to your resume"
+        }
+      ]
+    },
+    "resources": {
+      "title": "Resources & References",
+      "poppy": "Official Poppy Project documentation"
+    },
+    "cta": {
+      "title": "Ready to Build Poppy?",
+      "subtitle": "Join the team and bring a humanoid robot to life!",
+      "description": "If you're passionate about hardware, 3D printing or robotics, this project is for you.",
+      "button": "Join Poppy Conception"
+    }
+  },
+  "sgdbeyond": {
+    "hero": {
+      "title": "Stochastic Gradient Descent, and Beyond!",
+      "subtitle": "Research in Stochastic Optimization",
+      "paragraph1": "Have you ever wondered why your AI model sometimes converges to a mediocre solution when it could do so much better? The answer often lies in the optimization algorithm.",
+      "paragraph2": "Stochastic Gradient Descent (SGD) is the engine behind training virtually all deep learning models. Yet, despite 20 years of use, this algorithm remains imperfect: it gets stuck in local minima and often misses the best solutions.",
+      "image": {
+        "alt": "Gradient descent visualization"
+      }
+    },
+    "team": {
+      "title": "Leadership",
+      "lead": "Team Lead: Benjamin Leblanc",
+      "type": "Type: Scientific publication",
+      "size": "Sought team size: 5 members"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "understanding": {
+        "title": "Understand Why",
+        "description": "Analyze in depth why SGD gets stuck in local minima and misses the best solutions"
+      },
+      "hypothesis": {
+        "title": "Our Hypothesis",
+        "description": "Injecting intelligent 'noise' into the optimization process could help the model explore better solutions"
+      },
+      "goal": {
+        "title": "Concrete Objective",
+        "description": "Publish our results in a workshop-type conference"
+      },
+      "status": "The project is already well advanced — promising research avenues are identified and exploitation has begun. You're joining a team in full action!"
+    },
+    "objectives": {
+      "title": "Objectives & Deliverables",
+      "main": "Submit a research paper to a workshop-type conference",
+      "deliverables": {
+        "title": "Expected Deliverables",
+        "items": [
+          {
+            "title": "Exhaustive research grid",
+            "description": "Systematic exploration of optimal noise injection"
+          },
+          {
+            "title": "Large-scale experimentation",
+            "description": "Tests on real image classification models"
+          },
+          {
+            "title": "Scientific article",
+            "description": "Complete manuscript ready for submission"
+          }
+        ]
+      }
+    },
+    "timeline": {
+      "title": "Expected Timeline",
+      "weeks": [
+        {
+          "period": "Weeks 1-3",
+          "title": "Noise parameterization",
+          "description": "How to inject noise optimally?"
+        },
+        {
+          "period": "Weeks 4-6",
+          "title": "Noise/gradient relationship",
+          "description": "Find the right balance between noise and gradient estimates"
+        },
+        {
+          "period": "Weeks 7-9",
+          "title": "Large-scale experimentation",
+          "description": "Tests on real image classification models"
+        },
+        {
+          "period": "Weeks 10-12",
+          "title": "Writing",
+          "description": "Preliminary version of the scientific article"
+        },
+        {
+          "period": "Weeks 12+",
+          "title": "Finalization & submission",
+          "description": "Final revisions and conference submission"
+        }
+      ]
+    },
+    "technologies": {
+      "title": "Technologies & Skills",
+      "software": {
+        "title": "Software Stack",
+        "items": ["Python", "PyTorch / TensorFlow", "Jupyter Notebooks", "LaTeX", "GPU Computing"]
+      },
+      "hardware": {
+        "title": "Hardware",
+        "items": ["GPU (access provided for experiments)", "High-performance computing cluster"]
+      },
+      "skills": {
+        "title": "Target Skills",
+        "items": [
+          "Stochastic optimization",
+          "Probability theory",
+          "Deep Learning",
+          "Scientific writing",
+          "Experimental analysis"
+        ]
+      }
+    },
+    "profiles": {
+      "title": "Profiles Sought",
+      "programmer": {
+        "title": "Programmer",
+        "description": "Strong foundations in Python and deep learning frameworks",
+        "skills": ["Advanced Python", "PyTorch/TensorFlow", "ML experimentation", "Code optimization"]
+      },
+      "theorist": {
+        "title": "Theorist",
+        "description": "Knowledge in probability and integral calculus",
+        "skills": ["Applied mathematics", "Probabilities", "Differential calculus", "Theoretical analysis"]
+      },
+      "note": "No need to be an expert — curiosity and motivation count as much as technical skills!"
+    },
+    "benefits": {
+      "title": "Why Join This Project?",
+      "items": [
+        {
+          "title": "Understand Deep Learning",
+          "description": "Discover what really happens under the hood of deep learning"
+        },
+        {
+          "title": "Scientific Publication",
+          "description": "Contribute to a real publication and add it to your academic CV"
+        },
+        {
+          "title": "Theory + Practice",
+          "description": "Project where mathematical theory meets concrete experimentation"
+        },
+        {
+          "title": "Achievable Objective",
+          "description": "Advanced project with a concrete and achievable goal this session"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Optimize Optimization?",
+      "subtitle": "Join the research team and contribute to science!",
+      "description": "If you love mathematical theory, programming and scientific research, this project combines everything you love.",
+      "button": "Join the Research"
+    }
+  },
+  "canlock": {
+    "meta": {
+      "title": "CANlock - CAN Anomaly Detection with Thales | AI Club ULaval",
+      "description": "Partner project with Thales for intelligent attack detection on vehicle CAN bus."
+    },
+    "hero": {
+      "badge": "Partner Project",
+      "title": "CANlock",
+      "subtitle": "Secure tomorrow's vehicles with AI",
+      "description": "Help a cybersecurity team secure a fleet of ground vehicles by studying signals exchanged between sensors and actuators via the CAN (Controller Area Network) data bus. The goal: ensure the overall security of the vehicle, and by extension, that of its occupants.",
+      "members": "1-2 members wanted",
+      "teamLead": "Team Lead: Loïc Baret",
+      "cybersecurityLabel": "Automotive Cybersecurity"
+    },
+    "profiles": {
+      "title": "Profiles Wanted",
+      "items": [
+        { "title": "AI / Data Science", "desc": "Proficiency in ML algorithms and data processing" },
+        { "title": "Cybersecurity", "desc": "Interest in system and network security" },
+        { "title": "Embedded Systems", "desc": "Knowledge of vehicular communication protocols" }
+      ]
+    },
+    "challenge": {
+      "title": "The Challenge",
+      "threat": {
+        "title": "The Threat",
+        "description": "Modern vehicles integrate more and more embedded electronic units that exchange critical data via the CAN bus. An attacker who gains access to the CAN network can:",
+        "items": [
+          "Inject fraudulent messages",
+          "Modify braking commands",
+          "Alter vehicle steering",
+          "Manipulate critical displays"
+        ]
+      },
+      "falsePositives": {
+        "title": "The False Positive Problem",
+        "description1": "Current models achieve error rates of",
+        "errorRate": "<1%",
+        "description2": "which seems performant. But with",
+        "signalsPerMinute": "hundreds of thousands of signals per minute",
+        "description3": "this generates:",
+        "stat": "~1000+",
+        "statLabel": "false positives per minute",
+        "statNote": "Making detection unusable in practice"
+      }
+    },
+    "objectives": {
+      "title": "Objectives & Deliverables",
+      "main": {
+        "title": "Main Objective",
+        "description": "Design a more performant anomaly detection model/algorithm to",
+        "highlight": "drastically reduce false positives",
+        "description2": "on the CAN bus, while identifying truly critical anomalies."
+      },
+      "deliverables": {
+        "title": "Expected Deliverables",
+        "items": [
+          "Data processing pipeline(s) and tested model(s)",
+          "Mid-session and end-of-session technical report",
+          "Research article or proof of concept for Thales"
+        ]
+      }
+    },
+    "timeline": {
+      "title": "Session Timeline",
+      "week": "Week",
+      "items": [
+        { "weeks": "1-2", "phase": "Onboarding", "description": "Familiarization with the existing algorithm, tools and domain (CAN bus)." },
+        { "weeks": "3-4", "phase": "Solution Research", "description": "Proposal and study of improvement avenues." },
+        { "weeks": "5-7", "phase": "Development - Phase 1", "description": "Iterations on data processing and first model pipeline." },
+        { "weeks": "8", "phase": "Presentation #1", "description": "Mid-session report and progress presentation." },
+        { "weeks": "9-12", "phase": "Development - Phase 2", "description": "Improvement iterations and model testing." },
+        { "weeks": "13-15", "phase": "Finalization", "description": "Final tests, final technical report writing and documentation." }
+      ]
+    },
+    "tech": {
+      "title": "Technologies & Skills",
+      "stack": {
+        "title": "Tech Stack",
+        "note": "GPU machine provided • CAN data available"
+      },
+      "skills": {
+        "title": "Skills Developed",
+        "items": [
+          "Data analysis",
+          "Machine Learning for cybersecurity",
+          "Reverse engineering",
+          "Work on real industrial project",
+          "Technical writing"
+        ]
+      }
+    },
+    "whyJoin": {
+      "title": "Why Join CANlock?",
+      "intro": "You'll love this project if...",
+      "items": [
+        { "title": "Industrial Challenge", "desc": "You want to work on a concrete and critical cybersecurity challenge with a world leader (Thales)." },
+        { "title": "AI for Security", "desc": "You're interested in AI applied to anomaly detection and protection of critical systems." },
+        { "title": "CV Experience", "desc": "You want to gain valuable and concrete experience that will impress on your CV." }
+      ]
+    },
+    "cta": {
+      "title": "Ready to protect tomorrow's vehicles?",
+      "subtitle": "Join the CANlock team!",
+      "discord": "Join on Discord"
+    }
+  },
+  "drone": {
+    "hero": {
+      "title": "Drone Laser Tag",
+      "subtitle": "Autonomous Drone Competition",
+      "paragraph1": "The project consists of designing a drone and an autonomous driving algorithm to enable it to compete in a laser tag competition for drones. The objective: WIN! We'll try things, they won't work, we'll try others until it works.",
+      "paragraph2": "We're stepping off the beaten path and venturing to the frontier of what technology allows us to do. All while competing against other major Quebec universities! Buckle up, because this will be a project like no other.",
+      "image": {
+        "alt": "FPV Drone in action"
+      }
+    },
+    "team": {
+      "title": "Leadership",
+      "lead": "Team Lead: Anthony Lavertu",
+      "partner": "Partners: Philippe Giguère / Tracel AI",
+      "size": "Sought team size: 10 members"
+    },
+    "roles": {
+      "title": "Profiles and Roles Sought",
+      "gel": {
+        "title": "GEL / GIF",
+        "count": "2 members",
+        "description": "Handle communication between the drone, central computer and all pipeline components. Optimize and minimize transmission latency. Emulate the controller to communicate with the Flight Controller.",
+        "skills": ["Drone-computer communication", "Latency optimization", "C and Python", "Hardware and embedded"]
+      },
+      "simulation": {
+        "title": "Simulation",
+        "count": "2 members",
+        "description": "Design a complete simulation of the system and drones with Isaac Sim.",
+        "skills": ["Isaac Sim", "CAD and modeling", "Python", "Physics and simulation"]
+      },
+      "ai": {
+        "title": "AI / Code",
+        "count": "1 member",
+        "description": "Design an object detector to detect enemy drones and estimate their orientation. Detect walls and ceiling to avoid collisions.",
+        "skills": ["Computer Vision", "Rust", "Object detection", "SLAM"]
+      },
+      "pilots": {
+        "title": "Pilots",
+        "count": "3 members",
+        "description": "Excellent FPV drone pilots playing laser tag with their drones. Their role: generate data to train the AI.",
+        "skills": ["Expert FPV piloting", "Drone laser tag", "Data generation", "Testing and validation"]
+      }
+    },
+    "objectives": {
+      "title": "Project Objectives",
+      "main": "Win the competition",
+      "subtitle": "More specifically, the project consists of:",
+      "drone": {
+        "title": "Build the Drone",
+        "items": [
+          "FPV drone with multiple sensors under 250g",
+          "Maximize maneuverability",
+          "Minimize transmission latency",
+          "Run AI onboard"
+        ]
+      },
+      "ai": {
+        "title": "Develop the AI",
+        "items": [
+          "Real-time object detection",
+          "SLAM for autonomous navigation",
+          "Reinforcement Learning",
+          "Complete simulation with Isaac Sim"
+        ]
+      },
+      "deliverables": {
+        "title": "Expected Deliverables",
+        "items": [
+          "Functional FPV drone with sensors (<250g)",
+          "Operational Isaac Sim simulation",
+          "AI capable of autonomously piloting the drone"
+        ]
+      }
+    },
+    "commitment": {
+      "title": "Commitment Requirements",
+      "subtitle": "This project requires serious commitment",
+      "items": [
+        "Availability throughout 2026 (summer and fall)",
+        "Minimum 5 hours per week",
+        "Serious, motivated and committed profile required",
+        "Competitive spirit and teamwork"
+      ]
+    },
+    "technologies": {
+      "title": "Technologies & Skills",
+      "hardware": {
+        "title": "Hardware",
+        "items": [
+          "Custom FPV Drone",
+          "Cameras (mono and stereo)",
+          "Lidar and ToF",
+          "Laser blaster and receiver",
+          "IMU and sensors",
+          "Isaac Sim"
+        ]
+      },
+      "skills": {
+        "title": "Target Skills",
+        "items": [
+          "Embedded programming",
+          "Electronics and telecommunications",
+          "Reinforcement Learning",
+          "Computer Vision and Deep Learning",
+          "Mobile robotics",
+          "FPV piloting",
+          "Rapid prototyping"
+        ]
+      }
+    },
+    "benefits": {
+      "title": "Why Join This Project?",
+      "items": [
+        {
+          "title": "Project at the Edge of Possible",
+          "description": "Technological adventure at the frontier of what's achievable with current tech"
+        },
+        {
+          "title": "University Competition",
+          "description": "Face the best teams in Quebec in a real competition"
+        },
+        {
+          "title": "Hardware + Software",
+          "description": "Concrete project combining drone design, embedded AI and autonomous piloting"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready for the Adventure?",
+      "subtitle": "Join the team and participate in a unique competition!",
+      "description": "If you're ready to commit time, love extreme technical challenges and want to win, this project is for you.",
+      "button": "Join the Drone Team"
     }
   }
 }
