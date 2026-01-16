@@ -9,7 +9,8 @@ const projects = [
     key: "flapeeg",
     image: "/project/FlappyBrain.webp",
     defaultTitle: "FlapEEG",
-    defaultDescription: "A mind-controlled video game",
+    defaultDescription:
+      "Un jeu vidéo innovant contrôlé par les ondes cérébrales (EEG). Découvrez comment l'IA et la neurotechnologie permettent de piloter un oiseau virtuel par la pensée. Projet pionnier en interface cerveau-machine, ouvert à tous les profils (neuro, IA, dev, design).",
     link: "/flapeeg",
     github: "https://github.com/cia-ulaval/FlapEEG_interface_v1",
   },
@@ -17,22 +18,78 @@ const projects = [
     key: "f1tenth",
     image: "/project/f1tenthcar.webp",
     defaultTitle: "F1Tenth",
-    defaultDescription: "EMG racing with 1/10th-scale F1 cars",
+    defaultDescription:
+      "Course autonome avec des voitures F1 à l'échelle 1/10e, pilotées par signaux EMG (musculaires) et IA embarquée. Rejoignez l'équipe pour concevoir des algorithmes de pilotage, travailler sur la robotique embarquée et participer à des compétitions techniques. Ouvert aux passionnés de robotique, IA, hardware et software.",
     link: "/f1tenth",
     github: "https://github.com/cia-ulaval/F1-team-1",
+  },
+  {
+    key: "drone",
+    image: "/project/drone.jpeg",
+    defaultTitle: "Drone - Laser Tag",
+    defaultDescription:
+      "Développez un système laser clé en main pour une compétition FPV autonome : capteur 180°, émission, PCB custom et logiciel de gestion centralisé. Partenaire académique : Philippe Giguère. Team Lead : Anthony Lavertu.",
+    link: "/drone",
+    github: "https://github.com/cia-ulaval/drone",
+  },
+  {
+    key: "poppy-conception",
+    image: "/project/poppy.jpeg",
+    defaultTitle: "Poppy Humanoid (Conception)",
+    defaultDescription:
+      "Impression 3D, assemblage des articulations et intégration électronique d'un humanoïde open-source. Rejoignez le projet pour participer à la conception technique.",
+    link: "/poppy-conception",
+    github: "https://github.com/cia-ulaval/poppy-conception",
+  },
+  {
+    key: "poppy-simulation",
+    image: "/project/poppysimulation.jpeg",
+    defaultTitle: "Poppy Humanoid (Simulation)",
+    defaultDescription:
+      "Apprenez à un robot à marcher en développant des algorithmes RL en simulation, puis transférez-les sur le robot réel. Rejoignez le projet pour explorer l'IA robotique.",
+    link: "/poppy-simulation",
+    github: "https://github.com/cia-ulaval/poppy-simulation-team-1",
+  },
+  {
+    key: "sgd-beyond",
+    image: "",
+    defaultTitle: "SGD - Beyond",
+    defaultDescription:
+      "Analyse et amélioration d'un algorithme fondamental d'IA (SGD) en y intégrant une méthode d'optimisation par bruit. Plus d'infos et code sur GitHub.",
+    link: "/sgd-beyond",
+    github: "https://github.com/cia-ulaval/sgd",
+  },
+  {
+    key: "nutrinov",
+    image: "",
+    defaultTitle: "NutriNov",
+    defaultDescription:
+      "Identifiez un problème alimentaire et développez un prototype tech viable — en partenariat avec Open Food Facts. Type : Projet Entrepreneurial. Team Lead : Eloïse Prevot.",
+    link: "/nutrinov",
+  },
+  {
+    key: "canlock",
+    image: "",
+    defaultTitle: "CANlock",
+    defaultDescription:
+      "Projet partenaire avec Thales : Concevez un système intelligent pour détecter les attaques sur le bus CAN des véhicules. Objectif : réduire les faux positifs et livrer un pipeline exploitable. Profils recherchés : IA/Data, Cybersécurité, Embarqué.",
+    link: "/canlock",
+    github: "https://github.com/cia-ulaval/CANlock",
   },
   {
     key: "decisiontree",
     image: "/project/decisiontree.webp",
     defaultTitle: "Decision Tree",
-    defaultDescription: "Research and development of decision trees",
+    defaultDescription:
+      "Projet de recherche et développement sur les arbres de décision : explorez les algorithmes classiques et avancés, optimisez la prise de décision automatique et participez à la création d'outils open-source pour l'IA. Idéal pour les étudiants en data science, mathématiques et informatique.",
     link: "/decisiontree",
   },
   {
     key: "lenia",
     image: "/project/leniacover.png",
     defaultTitle: "Lenia",
-    defaultDescription: "Autonomous cellular automata",
+    defaultDescription:
+      "Automate cellulaire autonome inspiré de la vie artificielle : simulez des créatures virtuelles capables d'émergence, d'évolution et d'interaction. Ce projet allie mathématiques, simulation, IA et visualisation scientifique. Rejoignez-nous pour explorer la vie numérique et l'algorithmique créative.",
     link: "/lenia",
     github: "https://github.com/cia-ulaval/LENIA-frontend",
   },
@@ -40,7 +97,8 @@ const projects = [
     key: "mangaai",
     image: "/project/mangaai2.webp",
     defaultTitle: "MangaAI",
-    defaultDescription: "Automatic manga translation and analysis",
+    defaultDescription:
+      "Traduction et analyse automatique de mangas grâce à l'IA : OCR, NLP, génération de dialogues et analyse de style. Participez à la création d'outils pour la culture japonaise, la linguistique computationnelle et la vision par ordinateur. Idéal pour les passionnés d'IA, de manga et de traitement du langage.",
     link: "/mangaai",
     github: "https://github.com/cia-ulaval/MangaAutoTranslator",
   },
@@ -206,14 +264,22 @@ function Projects() {
                 className="flex justify-center"
               >
                 <div className="container bg-red-900/20 rounded-xl overflow-hidden shadow-lg w-full max-w-sm transition-all duration-300 h-auto min-h-[400px] sm:min-h-[450px]">
-                  <div
-                    className="w-full h-64 bg-cover bg-center"
-                    style={{
-                      backgroundImage: `url(${
-                        project.image || "/project/placeholder.webp"
-                      })`,
-                    }}
-                  />
+                  {["canlock", "sgd-beyond", "nutrinov"].includes(
+                    project.key
+                  ) ? (
+                    <div className="w-full h-64 bg-gray-800 rounded-xl flex items-center justify-center text-gray-500 text-lg">
+                      {t("home.projects.imageComing", "Image du projet à venir")}
+                    </div>
+                  ) : (
+                    <div
+                      className="w-full h-64 bg-cover bg-center"
+                      style={{
+                        backgroundImage: `url(${
+                          project.image || "/project/placeholder.webp"
+                        })`,
+                      }}
+                    />
+                  )}
                   <div className="p-6 flex flex-col min-h-[200px]">
                     <h3 className="text-xl font-semibold text-gray-200 mb-2">
                       {t(

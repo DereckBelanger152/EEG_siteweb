@@ -1,169 +1,173 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { Linkedin, ExternalLink, User } from "lucide-react";
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { User } from "lucide-react";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-interface TeamMember {
-  name: string;
-  role: string;
-  imgSrc?: string;
-  linkedIn?: string;
-  isVacant?: boolean;
-}
+import MemberModal, { TeamMember } from "../components/MemberModal";
 
 const Management: React.FC = () => {
   const { t } = useTranslation();
-  // Président
+  const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
+
+  // Président et Vice-Président
   const president: TeamMember[] = [
     {
       name: "Nathaniel D'Amours",
       role: t("management.roles.president"),
+      mission: t("management.missions.nathaniel"),
       imgSrc: "/portrait/Nathaniel.webp",
       linkedIn: "https://www.linkedin.com/in/nathaniel-damours",
     },
+    {
+      name: "Cyrille Bernier",
+      role: t("management.roles.vicePresident"),
+      imgSrc: "/portrait/CyrilleBernier.webp",
+      linkedIn: "https://www.linkedin.com/in/cyrille-bernier-31208a252/",
+    },
   ];
 
-  // Leaders principaux
+  // Pôle Logistique
   const logistics: TeamMember[] = [
     {
       name: "Louis-Étienne Messier",
       role: t("management.roles.logisticsLeader"),
+      mission: t("management.missions.louis"),
       imgSrc: "/portrait/Louis.webp",
       linkedIn: "https://www.linkedin.com/in/louis-etienne-messier-2361311ba/",
     },
-    {
-      name: "Alaa Eddine",
-      role: t("management.roles.logisticsManager"),
-      imgSrc: "/portrait/AlaaEddine.webp",
-      linkedIn: "https://www.linkedin.com/in/alaa-eddine-ayadi-7bb416227/",
-    },
   ];
 
-  // Responsables Talents
+  // Pôle Talents
   const talentResponsables: TeamMember[] = [
     {
       name: "Jade Piller Cammal",
       role: t("management.roles.talentsLeader"),
+      mission: t("management.missions.jade"),
       imgSrc: "/portrait/JadePillerCammal.webp",
       linkedIn: "https://linkedin.com/in/jade-piller-cammal-242b88261/",
     },
     {
-      name: "Hiba Arfaoui",
+      name: "Douae",
       role: t("management.roles.recruitmentManager"),
+      mission: t("management.missions.douae"),
+      imgSrc: "",
+      linkedIn: "",
+      isVacant: true,
+    },
+    {
+      name: "Hiba Arfaoui",
+      role: t("management.roles.recruitmentAssistant"),
+      mission: "",
       imgSrc: "/portrait/HibaArfoui.webp",
-      linkedIn: "http://linkedin.com/in/hiba-mameri-8a566a261/",
+      linkedIn: "http://linkedin.com/in/hiba-arfaoui/",
     },
     {
       name: "Rana Azemdroub",
       role: t("management.roles.engagementManager"),
+      mission: t("management.missions.rana"),
       imgSrc: "/portrait/RanaAzemdroub.webp",
       linkedIn: "https://www.linkedin.com/in/rana-azemdroub/",
     },
   ];
 
-  // Responsables Finances
+  // Pôle Finances
   const financeResponsables: TeamMember[] = [
     {
       name: "Alexandrine Lehoux",
       role: t("management.roles.financeLeader"),
+      mission: t("management.missions.alexandrine"),
       imgSrc: "/portrait/Alexandrine.webp",
       linkedIn: "https://www.linkedin.com/in/alexandrine-lehoux-b511771b7/",
     },
     {
-      name: "Anthony Lavertu",
-      role: t("management.roles.externalRelationsManager"),
-      imgSrc: "/portrait/Anthony.webp",
-      linkedIn: "https://www.linkedin.com/in/anthony-lavertu-2a29a7179/",
+      name: "Mihal",
+      role: t("management.roles.partnershipsManager"),
+      mission: t("management.missions.mihal"),
+      imgSrc: "",
+      linkedIn: "",
+      isVacant: true,
     },
     {
-      name: "Cyrille Bernier",
+      name: "Chaima",
       role: t("management.roles.partnershipsManager"),
-      imgSrc: "/portrait/CyrilleBernier.webp",
-      linkedIn: "https://www.linkedin.com/in/cyrille-bernier-31208a252/",
+      mission: "",
+      imgSrc: "",
+      linkedIn: "",
+      isVacant: true,
     },
     {
       name: "Adriana Paternina",
       role: t("management.roles.treasuryManager"),
+      mission: t("management.missions.adriana"),
       imgSrc: "/portrait/AdrianaMaria.webp",
       linkedIn: "https://www.linkedin.com/in/adriana-paternina/",
     },
     {
+      name: "Anthony Lavertu",
+      role: t("management.roles.externalRelationsManager"),
+      mission: t("management.missions.anthony"),
+      imgSrc: "/portrait/Anthony.webp",
+      linkedIn: "https://www.linkedin.com/in/anthony-lavertu-2a29a7179/",
+    },
+    {
       name: "Hiba Mameri",
       role: t("management.roles.externalRelationsManager"),
+      mission: "",
       imgSrc: "/portrait/HibaMameri.webp",
       linkedIn: "https://www.linkedin.com/in/hiba-mameri-8a566a261/",
     },
   ];
 
-  // Team Leads (responsables d'équipe)
-  const projectLeads: TeamMember[] = [
-    {
-      name: "Jordan Mathieu",
-      role: t("management.roles.projectsLeader"),
-      imgSrc: "/portrait/Jordan.webp",
-      linkedIn: "https://www.linkedin.com/in/jordan-math/",
-    },
-    {
-      name: "Vincent Bellemare",
-      role: t("management.roles.roleVincent"),
-      imgSrc: "/portrait/VincentBellemare.webp",
-      linkedIn: "https://www.linkedin.com/in/vincent-bellemare-i89/",
-    },
-    {
-      name: "Amen Ouannes",
-      role: t("management.roles.roleAmen"),
-      imgSrc: "/portrait/AmenOuannes.webp",
-      linkedIn: "https://www.linkedin.com/in/amenallah-massarra-ouannes/",
-    },
-    {
-      name: "Mathieu Bazinet",
-      role: t("management.roles.trainingsManager"),
-      imgSrc: "/portrait/Mathieu.webp",
-      linkedIn: "https://www.linkedin.com/in/mathieu-bazinet-196523a6",
-    },
-  ];
-
-  // Responsables Marketing
+  // Pôle Marketing
   const marketingResponsables: TeamMember[] = [
     {
       name: "Yves Mamadou Faye",
       role: t("management.roles.marketingLeader"),
+      mission: t("management.missions.yves"),
       imgSrc: "/portrait/Yves.webp",
       linkedIn: "https://www.linkedin.com/in/yves-faye-3b45062a5/",
     },
     {
-      name: "Dereck Bélanger",
-      role: t("management.roles.websiteManager"),
-      imgSrc: "/portrait/Dereck.webp",
-      linkedIn: "https://www.linkedin.com/in/dereck-bélanger-437259338/",
+      name: "Hiba Arfaoui",
+      role: t("management.roles.communicationsManager"),
+      mission: t("management.missions.hibaComm"),
+      imgSrc: "/portrait/HibaArfoui.webp",
+      linkedIn: "http://linkedin.com/in/hiba-arfaoui/",
     },
     {
       name: "Youssouf Boubechiche",
       role: t("management.roles.designsManager"),
+      mission: t("management.missions.youssouf"),
       imgSrc: "/portrait/YoussoufBoubechiche.webp",
       linkedIn: "https://www.linkedin.com/in/youssouf-boubechiche-62668128a/",
     },
+    {
+      name: "Dereck Bélanger",
+      role: t("management.roles.websiteManager"),
+      mission: t("management.missions.dereck"),
+      imgSrc: "/portrait/Dereck.webp",
+      linkedIn: "https://www.linkedin.com/in/dereck-bélanger-437259338/",
+      github: "https://github.com/DereckBelanger152",
+      portfolio: "https://dereckbelanger.me",
+      additionalDetails: t("management.aboutMe.dereck"),
+    },
   ];
 
-  // Responsables Activités
+  // Pôle Activités
   const activitiesResponsables: TeamMember[] = [
     {
-      name: "Nathaniel D'Amours",
+      name: "Éléonore",
       role: t("management.roles.activitiesLeader"),
-      imgSrc: "/portrait/Nathaniel.webp",
-      linkedIn: "https://www.linkedin.com/in/nathaniel-damours/",
-    },
-    {
-      name: "Guilhem Ané",
-      role: t("management.roles.competitionsManager"),
-      imgSrc: "/portrait/GuilhemAne.webp",
-      linkedIn: "https://www.linkedin.com/in/guilhemane/",
+      mission: t("management.missions.eleonore"),
+      imgSrc: "",
+      linkedIn: "",
+      isVacant: true,
     },
     {
       name: "William Blanchet Lafrenière",
       role: t("management.roles.socialManager"),
+      mission: t("management.missions.william"),
       imgSrc: "/portrait/WilliamBlanchet.webp",
       linkedIn:
         "https://www.linkedin.com/in/william-blanchet-lafrenière-8337282b1/",
@@ -171,18 +175,67 @@ const Management: React.FC = () => {
     {
       name: "Melek Sebri",
       role: t("management.roles.socialManager"),
+      mission: "",
       imgSrc: "/portrait/MelekSebri.webp",
       linkedIn: "https://www.linkedin.com/in/melek-sebri/",
     },
     {
       name: "Nora Belattar",
       role: t("management.roles.recognitionManager"),
+      mission: t("management.missions.nora"),
       imgSrc: "/portrait/NoraBelattar.webp",
       linkedIn: "https://www.linkedin.com/in/nora-belattar-77243b302/",
     },
   ];
 
-  // Project Leads (responsables de projets)
+  // Pôle Projets
+  const projectLeads: TeamMember[] = [
+    {
+      name: "Jordan Mathieu",
+      role: t("management.roles.projectsLeader"),
+      mission: t("management.missions.jordan"),
+      imgSrc: "/portrait/Jordan.webp",
+      linkedIn: "https://www.linkedin.com/in/jordan-math/",
+    },
+    {
+      name: "Guilhem Ané",
+      role: t("management.roles.trainingsManager"),
+      mission: t("management.missions.guilhem"),
+      imgSrc: "/portrait/GuilhemAne.webp",
+      linkedIn: "https://www.linkedin.com/in/guilhemane/",
+    },
+    {
+      name: "Amen Ouannes",
+      role: t("management.roles.projectsManager"),
+      mission: t("management.missions.amen"),
+      imgSrc: "/portrait/AmenOuannes.webp",
+      linkedIn: "https://www.linkedin.com/in/amenallah-massarra-ouannes/",
+    },
+    {
+      name: "Vincent Bellemare",
+      role: t("management.roles.projectsManager"),
+      mission: "",
+      imgSrc: "/portrait/VincentBellemare.webp",
+      linkedIn: "https://www.linkedin.com/in/vincent-bellemare-i89/",
+    },
+    {
+      name: "Benjamin Leblanc",
+      role: t("management.roles.projectsManager"),
+      mission: "",
+      imgSrc: "/portrait/Benjamin_Leblanc.webp",
+      linkedIn: "https://www.linkedin.com/in/benjamin-leblanc-a9217128b/",
+    },
+    {
+      name: "Babacar",
+      role: t("management.roles.projectsManager"),
+      mission: "",
+      imgSrc: "",
+      linkedIn: "",
+      isVacant: true,
+    },
+  ];
+
+  // Team Leads (responsables de projets)
   const teamLeads: TeamMember[] = [
     {
       name: "Loïc Baret",
@@ -249,27 +302,27 @@ const Management: React.FC = () => {
     const cardSizes = {
       large: {
         width: "16rem",
-        height: "420px",
-        imageHeight: "210px",
-        bodyHeight: "210px",
+        height: "360px",
+        imageHeight: "220px",
+        bodyHeight: "140px",
         titleSize: "text-xl",
         roleSize: "text-base",
         headerSize: "text-6xl",
       },
       medium: {
         width: "14rem",
-        height: "380px",
+        height: "320px",
         imageHeight: "190px",
-        bodyHeight: "190px",
+        bodyHeight: "130px",
         titleSize: "text-lg",
         roleSize: "text-sm",
         headerSize: "text-5xl",
       },
       small: {
         width: "12rem",
-        height: "320px",
+        height: "280px",
         imageHeight: "160px",
-        bodyHeight: "160px",
+        bodyHeight: "120px",
         titleSize: "text-base",
         roleSize: "text-sm",
         headerSize: "text-4xl",
@@ -293,121 +346,76 @@ const Management: React.FC = () => {
             {titleKey}
           </span>
         </h1>
-        <div
-          className={`flex flex-wrap gap-4 justify-center ${
-            cardSize === "large" ? "" : cardSize === "medium" ? "" : ""
-          }`}
-        >
+        <div className="flex flex-wrap gap-4 justify-center">
           {members.map((member, idx) => (
-            <div key={idx}>
-              {member.isVacant ? (
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="bg-red-900/40 border-2 border-red-800/50 border-dashed text-white mb-12 relative overflow-hidden rounded-lg"
-                  style={{
-                    width: size.width,
-                    height: size.height,
-                  }}
-                >
-                  <div
-                    className="bg-red-800/20 flex items-center justify-center"
-                    style={{ height: size.imageHeight }}
-                  >
-                    <User className="w-16 h-16 text-red-400/50" />
-                  </div>
-                  <div
-                    className="text-center flex flex-col justify-center p-2"
-                    style={{ height: size.bodyHeight }}
-                  >
-                    <div className="flex-grow flex flex-col justify-center">
-                      <h3
-                        className={`text-red-300/70 mb-1 ${size.titleSize} font-semibold`}
-                      >
-                        {t("management.vacantPosition")}
-                      </h3>
-                      <p
-                        className={`text-red-400/60 ${size.roleSize} leading-tight`}
-                      >
-                        {member.role}
-                      </p>
-                    </div>
-                    <div className="flex items-center justify-center mt-1 text-red-500/50">
-                      <small className="text-xs font-medium">
-                        {t("management.positionInInterview")}
-                      </small>
-                    </div>
-                  </div>
-                </motion.div>
-              ) : (
-                <motion.a
-                  href={member.linkedIn}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="no-underline"
-                >
-                  <div
-                    className="bg-red-900/80 border-2 border-red-700 hover:border-red-500 text-white mb-12 relative overflow-hidden rounded-lg transition-all duration-300"
-                    style={{
-                      width: size.width,
-                      height: size.height,
-                      cursor: "pointer",
-                    }}
-                  >
-                    {/* Badge LinkedIn - visible au hover */}
-                    <div className="absolute top-0 right-0 m-1 opacity-0 hover:opacity-100 transition-opacity duration-300 z-10">
-                      <div className="bg-red-600 hover:bg-red-500 rounded-full p-1.5 shadow-lg transition-colors">
-                        <Linkedin className="w-3 h-3 text-white" />
-                      </div>
-                    </div>
+            <motion.div
+              key={idx}
+              whileHover={{ scale: 1.05, y: -5 }}
+              whileTap={{ scale: 0.98 }}
+              onClick={() => !member.isVacant && setSelectedMember(member)}
+              className={`${
+                member.isVacant
+                  ? "bg-red-900/40 border-2 border-red-800/50 border-dashed cursor-default"
+                  : "bg-red-900/80 border-2 border-red-700 hover:border-red-500 cursor-pointer"
+              } text-white mb-12 relative overflow-hidden rounded-lg transition-all duration-300`}
+              style={{
+                width: size.width,
+                height: size.height,
+              }}
+            >
+              {/* Image Section */}
+              <div
+                className={`${
+                  member.isVacant ? "bg-red-800/20" : ""
+                } flex items-center justify-center`}
+                style={{ height: size.imageHeight }}
+              >
+                {member.imgSrc && !member.isVacant ? (
+                  <img
+                    src={member.imgSrc}
+                    alt={member.name}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <User className="w-16 h-16 text-red-400/50" />
+                )}
+              </div>
 
-                    {/* Overlay hover avec icône */}
-                    <div className="absolute inset-0 bg-black/0 hover:bg-black/20 transition-all duration-300 flex items-center justify-center opacity-0 hover:opacity-100">
-                      <div className="text-center">
-                        <ExternalLink className="w-6 h-6 text-white mb-1" />
-                        <p className="text-white text-xs font-semibold">
-                          {t("management.viewLinkedIn")}
-                        </p>
-                      </div>
-                    </div>
-
-                    <img
-                      src={member.imgSrc}
-                      alt={member.name}
-                      className="w-full object-cover"
-                      style={{ height: size.imageHeight }}
-                    />
-                    <div
-                      className="text-center flex flex-col justify-between p-2"
-                      style={{ height: size.bodyHeight }}
-                    >
-                      <div className="flex-grow flex flex-col justify-center">
-                        <h3
-                          className={`text-gray-200 mb-1 ${size.titleSize} leading-tight`}
-                        >
-                          {member.name}
-                        </h3>
-                        <p
-                          className={`text-gray-400 ${size.roleSize} leading-tight`}
-                        >
-                          {member.role}
-                        </p>
-                      </div>
-
-                      {/* Indicateur LinkedIn dans le footer de la carte */}
-                      <div className="flex items-center justify-center mt-1 text-red-400 hover:text-red-300 transition-colors">
-                        <Linkedin className="w-3 h-3 mr-1" />
-                        <small className="text-xs font-medium">
-                          {t("management.linkedIn")}
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                </motion.a>
+              {/* Hover overlay for non-vacant cards */}
+              {!member.isVacant && (
+                <div className="absolute inset-0 bg-black/0 hover:bg-black/30 transition-all duration-300 flex items-center justify-center opacity-0 hover:opacity-100">
+                  <p className="text-white text-sm font-semibold bg-red-600/80 px-3 py-1 rounded-full">
+                    {t("management.viewProfile")}
+                  </p>
+                </div>
               )}
-            </div>
+
+              {/* Content Section */}
+              <div
+                className="text-center flex flex-col justify-center p-3"
+                style={{ height: size.bodyHeight }}
+              >
+                <h3
+                  className={`${
+                    member.isVacant ? "text-red-300/70" : "text-gray-200"
+                  } mb-1 ${size.titleSize} leading-tight font-semibold`}
+                >
+                  {member.name}
+                </h3>
+                <p
+                  className={`${
+                    member.isVacant ? "text-red-400/60" : "text-gray-400"
+                  } ${size.roleSize} leading-tight`}
+                >
+                  {member.role}
+                </p>
+                {member.isVacant && (
+                  <p className="text-red-500/50 text-xs mt-2">
+                    {t("management.positionInInterview")}
+                  </p>
+                )}
+              </div>
+            </motion.div>
           ))}
         </div>
       </motion.section>
@@ -416,6 +424,24 @@ const Management: React.FC = () => {
 
   return (
     <>
+      {/* Modal */}
+      <AnimatePresence>
+        {selectedMember && (
+          <MemberModal
+            member={selectedMember}
+            onClose={() => setSelectedMember(null)}
+            translations={{
+              name: t("management.modal.name"),
+              role: t("management.modal.role"),
+              mission: t("management.modal.mission"),
+              aboutMe: t("management.modal.aboutMe"),
+              connect: t("management.modal.connect"),
+              noDetails: t("management.modal.noDetails"),
+            }}
+          />
+        )}
+      </AnimatePresence>
+
       <Helmet>
         {/* Titre */}
         <title>{t("management.pageTitle")}</title>
