@@ -17,7 +17,7 @@
       },
       "f1tenth": {
         "title": "F1Tenth",
-        "description": "Autonomous racing with 1:10th-scale F1 cars powered by EMG (muscle) signals and embedded AI. Join the team to design control algorithms, work on embedded robotics, and take part in technical competitions. Open to robotics, AI, hardware, and software enthusiasts."
+        "description": "In partnership with the VAUL student club (owner of the F1TENTH car), develop a control mode via EMG bracelet. Objective: detect arm movements from muscle signals, interpret them with AI, then convert them into driving commands (steering/speed) to control the vehicle. Project focused on EMG and AI."
       },
       "decisiontree": {
         "title": "TreeCore",
@@ -54,6 +54,10 @@
       "poppy-simulation": {
         "title": "Poppy Humanoid (Simulation)",
         "description": "Teach a robot to walk by developing reinforcement learning algorithms in simulation and transferring them to the real robot. Join the project to explore robotic AI."
+      },
+      "asldecoder": {
+        "title": "ASL Decoder",
+        "description": "Raspberry Pi system with camera for real-time American Sign Language (ASL) recognition using AI. Completed project combining computer vision and machine learning."
       },
       "imageComing": "Project image coming soon",
       "learnMore": "Learn more",
@@ -1499,6 +1503,43 @@
       "subtitle": "Join the team and participate in a unique competition!",
       "description": "If you're ready to commit time, love extreme technical challenges and want to win, this project is for you.",
       "button": "Join the Drone Team"
+    }
+  },
+  "asldecoder": {
+    "meta": {
+      "title": "AI-Powered Sign Language Recognition",
+      "description": "ASL Decoder: Raspberry Pi system with camera for real-time American Sign Language gesture recognition using artificial intelligence.",
+      "keywords": "ASL, sign language, gesture recognition, Raspberry Pi, AI, computer vision, accessibility, Club IA ULaval"
+    },
+    "status": {
+      "completed": "Project completed!"
+    },
+    "hero": {
+      "subtitle": "Sign Language Recognition",
+      "description": "Develop a Raspberry Pi system with a camera that predicts hand movements using American Sign Language (ASL). This project combines computer vision and machine learning to make communication more accessible."
+    },
+    "features": {
+      "title": "Project Features",
+      "camera": {
+        "title": "Real-Time Vision",
+        "description": "Capture and analyze hand gestures in real-time using a camera connected to the Raspberry Pi."
+      },
+      "ai": {
+        "title": "Embedded AI",
+        "description": "Machine learning model optimized to run directly on the Raspberry Pi."
+      },
+      "gestures": {
+        "title": "ASL Recognition",
+        "description": "Detection and classification of American Sign Language letters and gestures."
+      }
+    },
+    "tech": {
+      "title": "Technologies Used",
+      "items": ["Raspberry Pi", "Python", "OpenCV", "TensorFlow Lite", "MediaPipe", "Computer Vision"]
+    },
+    "team": {
+      "title": "The Team",
+      "subtitle": "The members who made this project happen"
     }
   }
 }

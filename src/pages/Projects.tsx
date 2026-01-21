@@ -19,7 +19,7 @@ const projects = [
     image: "/project/f1tenthcar.webp",
     defaultTitle: "F1Tenth",
     defaultDescription:
-      "Course autonome avec des voitures F1 à l'échelle 1/10e, pilotées par signaux EMG (musculaires) et IA embarquée. Rejoignez l'équipe pour concevoir des algorithmes de pilotage, travailler sur la robotique embarquée et participer à des compétitions techniques. Ouvert aux passionnés de robotique, IA, hardware et software.",
+      "En partenariat avec le club étudiant VAUL (propriétaire de la voiture F1TENTH), développer un mode de contrôle via bracelet EMG. Objectif : détecter les mouvements du bras à partir des signaux musculaires, les interpréter avec de l'IA, puis les convertir en commandes de pilotage (direction/vitesse) pour contrôler le véhicule. Projet axé sur EMG et IA.",
     link: "/f1tenth",
     github: "https://github.com/cia-ulaval/F1-team-1",
   },
@@ -52,7 +52,7 @@ const projects = [
   },
   {
     key: "sgd-beyond",
-    image: "",
+    image: "/project/sgd.png",
     defaultTitle: "SGD - Beyond",
     defaultDescription:
       "Analyse et amélioration d'un algorithme fondamental d'IA (SGD) en y intégrant une méthode d'optimisation par bruit. Plus d'infos et code sur GitHub.",
@@ -60,21 +60,12 @@ const projects = [
     github: "https://github.com/cia-ulaval/sgd",
   },
   {
-    key: "nutrinov",
-    image: "",
-    defaultTitle: "NutriNov",
+    key: "asldecoder",
+    image: "/project/asl.png",
+    defaultTitle: "ASL Decoder",
     defaultDescription:
-      "Identifiez un problème alimentaire et développez un prototype tech viable — en partenariat avec Open Food Facts. Type : Projet Entrepreneurial. Team Lead : Eloïse Prevot.",
-    link: "/nutrinov",
-  },
-  {
-    key: "canlock",
-    image: "",
-    defaultTitle: "CANlock",
-    defaultDescription:
-      "Projet partenaire avec Thales : Concevez un système intelligent pour détecter les attaques sur le bus CAN des véhicules. Objectif : réduire les faux positifs et livrer un pipeline exploitable. Profils recherchés : IA/Data, Cybersécurité, Embarqué.",
-    link: "/canlock",
-    github: "https://github.com/cia-ulaval/CANlock",
+      "Système Raspberry Pi avec caméra pour la reconnaissance du langage des signes américain (ASL) en temps réel grâce à l'IA. Projet terminé combinant vision par ordinateur et apprentissage automatique.",
+    link: "/asl-decoder",
   },
   {
     key: "decisiontree",
@@ -101,6 +92,23 @@ const projects = [
       "Traduction et analyse automatique de mangas grâce à l'IA : OCR, NLP, génération de dialogues et analyse de style. Participez à la création d'outils pour la culture japonaise, la linguistique computationnelle et la vision par ordinateur. Idéal pour les passionnés d'IA, de manga et de traitement du langage.",
     link: "/mangaai",
     github: "https://github.com/cia-ulaval/MangaAutoTranslator",
+  },
+  {
+    key: "nutrinov",
+    image: "",
+    defaultTitle: "NutriNov",
+    defaultDescription:
+      "Identifiez un problème alimentaire et développez un prototype tech viable — en partenariat avec Open Food Facts. Type : Projet Entrepreneurial. Team Lead : Eloïse Prevot.",
+    link: "/nutrinov",
+  },
+  {
+    key: "canlock",
+    image: "",
+    defaultTitle: "CANlock",
+    defaultDescription:
+      "Projet partenaire avec Thales : Concevez un système intelligent pour détecter les attaques sur le bus CAN des véhicules. Objectif : réduire les faux positifs et livrer un pipeline exploitable. Profils recherchés : IA/Data, Cybersécurité, Embarqué.",
+    link: "/canlock",
+    github: "https://github.com/cia-ulaval/CANlock",
   },
 ];
 
@@ -264,11 +272,12 @@ function Projects() {
                 className="flex justify-center"
               >
                 <div className="container bg-red-900/20 rounded-xl overflow-hidden shadow-lg w-full max-w-sm transition-all duration-300 h-auto min-h-[400px] sm:min-h-[450px]">
-                  {["canlock", "sgd-beyond", "nutrinov"].includes(
-                    project.key
-                  ) ? (
+                  {["canlock", "nutrinov"].includes(project.key) ? (
                     <div className="w-full h-64 bg-gray-800 rounded-xl flex items-center justify-center text-gray-500 text-lg">
-                      {t("home.projects.imageComing", "Image du projet à venir")}
+                      {t(
+                        "home.projects.imageComing",
+                        "Image du projet à venir",
+                      )}
                     </div>
                   ) : (
                     <div
@@ -284,13 +293,13 @@ function Projects() {
                     <h3 className="text-xl font-semibold text-gray-200 mb-2">
                       {t(
                         `home.projects.${project.key}.title`,
-                        project.defaultTitle
+                        project.defaultTitle,
                       )}
                     </h3>
                     <p className="text-gray-400 mb-4 flex-grow overflow-visible break-words leading-relaxed text-sm sm:text-base">
                       {t(
                         `home.projects.${project.key}.description`,
-                        project.defaultDescription
+                        project.defaultDescription,
                       )}
                     </p>
 

@@ -303,12 +303,12 @@ function F1Tenth() {
                     </span>
                   </h1>
                   <div className="space-y-4">
-                    <p className="text-gray-400 text-base lg:text-lg leading-relaxed">
+                    {/* <p className="text-gray-400 text-base lg:text-lg leading-relaxed">
                       {t("f1tenth.hero.description1")}
                     </p>
                     <p className="text-gray-400 text-base leading-relaxed">
                       {t("f1tenth.hero.description2")}
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>
