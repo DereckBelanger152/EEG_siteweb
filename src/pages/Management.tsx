@@ -297,7 +297,7 @@ const Management: React.FC = () => {
   const renderCards = (
     members: TeamMember[],
     titleKey: string,
-    cardSize: "large" | "medium" | "small"
+    cardSize: "large" | "medium" | "small",
   ) => {
     const cardSizes = {
       large: {
@@ -504,7 +504,7 @@ const Management: React.FC = () => {
                 "url": "https://cia.ift.ulaval.ca",
                 "logo": "https://cia.ift.ulaval.ca/banner/CIA_LOGO.webp",
                 "description": "${t(
-                  "management.structuredData.organizationDescription"
+                  "management.structuredData.organizationDescription",
                 )}",
                 "foundingLocation": {
                   "@type": "Place",
@@ -555,7 +555,7 @@ const Management: React.FC = () => {
                     "@type": "Person",
                     "name": "Anthony Lavertu",
                     "jobTitle": "${t(
-                      "management.roles.externalRelationsManager"
+                      "management.roles.externalRelationsManager",
                     )}",
                     "sameAs": "https://www.linkedin.com/in/anthony-lavertu-2a29a7179/"
                   },
@@ -600,27 +600,27 @@ const Management: React.FC = () => {
         {renderCards(
           talentResponsables,
           t("management.sections.talentTeam"),
-          "medium"
+          "medium",
         )}
         {renderCards(
           marketingResponsables,
           t("management.sections.marketingTeam"),
-          "medium"
+          "medium",
         )}
         {renderCards(
           projectLeads,
           t("management.sections.projectsTeam"),
-          "medium"
+          "medium",
         )}
         {renderCards(
           financeResponsables,
           t("management.sections.financeTeam"),
-          "medium"
+          "medium",
         )}
         {renderCards(
           activitiesResponsables,
           t("management.sections.activitiesTeam"),
-          "medium"
+          "medium",
         )}
         {renderCards(teamLeads, t("management.sections.teamLeads"), "medium")}
       </motion.div>

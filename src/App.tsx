@@ -20,6 +20,7 @@ import SGDBeyond from "./pages/SGDBeyond";
 import NutriNov from "./pages/NutriNov";
 import PoppyConception from "./pages/PoppyConception";
 import PoppySimulation from "./pages/PoppySimulation";
+import ASLDecoder from "./pages/ASLDecoder";
 
 // Components
 import Navbar from "./components/Navbar";
@@ -48,6 +49,7 @@ function App() {
           <Route path="/nutrinov" element={<NutriNov />} />
           <Route path="/poppy-conception" element={<PoppyConception />} />
           <Route path="/poppy-simulation" element={<PoppySimulation />} />
+          <Route path="/asl-decoder" element={<ASLDecoder />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/collaboration" element={<Collaboration />} />
           <Route path="/join-us" element={<JoinUs />} />

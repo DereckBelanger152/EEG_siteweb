@@ -17,7 +17,7 @@
       },
       "f1tenth": {
         "title": "F1Tenth",
-          "description": "Course autonome avec des voitures F1 à l'échelle 1/10e, pilotées par signaux EMG (musculaires) et IA embarquée. Rejoignez l'équipe pour concevoir des algorithmes de pilotage, travailler sur la robotique embarquée et participer à des compétitions techniques. Ouvert aux passionnés de robotique, IA, hardware et software."
+          "description": "En partenariat avec le club étudiant VAUL (propriétaire de la voiture F1TENTH), développer un mode de contrôle via bracelet EMG. Objectif : détecter les mouvements du bras à partir des signaux musculaires, les interpréter avec de l'IA, puis les convertir en commandes de pilotage (direction/vitesse) pour contrôler le véhicule. Projet axé sur EMG et IA."
       },
       "decisiontree": {
         "title": "TreeCore",
@@ -54,6 +54,10 @@
       "canlock": {
         "title": "CANlock",
         "description": "Projet partenaire avec Thales : Concevez un système intelligent pour détecter les attaques sur le bus CAN des véhicules. Objectif : réduire les faux positifs et livrer un pipeline exploitable. Profils recherchés : IA/Data, Cybersécurité, Embarqué."
+      },
+      "asldecoder": {
+        "title": "ASL Decoder",
+        "description": "Système Raspberry Pi avec caméra pour la reconnaissance du langage des signes américain (ASL) en temps réel grâce à l'IA. Projet terminé combinant vision par ordinateur et apprentissage automatique."
       },
       "imageComing": "Image du projet à venir",
       "learnMore": "En savoir plus",
@@ -1487,6 +1491,43 @@
       "subtitle": "Rejoignez l'équipe et participez à une compétition unique !",
       "description": "Si tu es prêt à mettre du temps, que tu aimes les défis techniques extrêmes et que tu veux gagner, ce projet est fait pour toi.",
       "button": "Rejoindre l'Équipe Drone"
+    }
+  },
+  "asldecoder": {
+    "meta": {
+      "title": "Reconnaissance du Langage des Signes par IA",
+      "description": "ASL Decoder : système Raspberry Pi avec caméra pour la reconnaissance des gestes du langage des signes américain en temps réel grâce à l'intelligence artificielle.",
+      "keywords": "ASL, langage des signes, reconnaissance gestuelle, Raspberry Pi, IA, computer vision, accessibilité, Club IA ULaval"
+    },
+    "status": {
+      "completed": "Projet terminé !"
+    },
+    "hero": {
+      "subtitle": "Reconnaissance du Langage des Signes",
+      "description": "Développer un système Raspberry Pi avec une caméra qui prédit les mouvements de la main à l'aide du langage des signes américain (ASL). Ce projet combine vision par ordinateur et apprentissage automatique pour rendre la communication plus accessible."
+    },
+    "features": {
+      "title": "Caractéristiques du Projet",
+      "camera": {
+        "title": "Vision Temps Réel",
+        "description": "Capture et analyse des gestes de la main en temps réel grâce à une caméra connectée au Raspberry Pi."
+      },
+      "ai": {
+        "title": "IA Embarquée",
+        "description": "Modèle d'apprentissage automatique optimisé pour fonctionner directement sur le Raspberry Pi."
+      },
+      "gestures": {
+        "title": "Reconnaissance ASL",
+        "description": "Détection et classification des lettres et gestes du langage des signes américain."
+      }
+    },
+    "tech": {
+      "title": "Technologies Utilisées",
+      "items": ["Raspberry Pi", "Python", "OpenCV", "TensorFlow Lite", "MediaPipe", "Computer Vision"]
+    },
+    "team": {
+      "title": "L'Équipe",
+      "subtitle": "Les membres qui ont réalisé ce projet"
     }
   }
 }
